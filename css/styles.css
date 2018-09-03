@@ -1,0 +1,58 @@
+﻿.contact {
+  position:fixed;
+  right:1%;
+}
+      
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+  	margin: auto;
+  	margin-left:15%;
+  	display: block;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #a0f2fe;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  	margin-left: 15%;  
+}
+
+.vertical-menu {
+    width: 10%;
+    height: 500px;
+    position: fixed;
+  	top: 0px;
+  	left: 0px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
