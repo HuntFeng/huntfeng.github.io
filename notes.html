@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Hunt Feng</title>
+
+    <style>
+
+        /*floating cards for different notes*/
+        .card {
+            width: 240px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            background-color: white;
+            position: relative;
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* This is for text fade in */
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+        .image {
+            width: 100%;
+            height: 170px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-color: rgba(128, 128, 128, 0.72);
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .cardText {
+            padding: 10px;
+        }
+
+
+        /*body background image*/
+        html, body {
+            background-image: url(img/back-ground-image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        /*header*/
+        header {
+            display: block;
+            height: 100px;
+        }
+
+        /* This is the white canvas */
+        .border {
+            width: 90%;
+            margin-left: 5%;
+            background-color: white;
+            position: absolute;
+            opacity: 0.90;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /*Navigation bar*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1 style="text-align:center;"> Welcome to the world of Mathematical Phsics!</h1>
+        <h2 style="text-align:center; "> Here you will find all the stuff you need to start walking into the world of math and physics! </h2>
+    </header>
+
+    <div class="border">
+        <!--Navigation bar-->
+        <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="/notes.html">Notes</a></li>
+            <li><a href="/courses.html">Courses</a></li>
+            <li><a href="/contactme.html">Contact me</a></li>
+        </ul>
+
+        <!--Math Part-->
+        <h2 style="margin-left:2%;margin-bottom:0;"> Undergraduate Math </h2>
+        <div class="card" style="margin-left:3%; margin-top:2%">
+            <div class="container">
+                <a href="pages/Math232/Chapter1.html">
+                    <img src="/img/QC.jpg" alt="Linear Algebra" class="image">
+
+                    <div class="overlay">
+                        <div class="text">Linear Algebra</div>
+                    </div>
+                </a>
+            </div>
+            <div class="cardText"> Math 232 - Linear Algebra </div>
+        </div>
+
+
+        <div class="card" style="margin-left:27%; margin-top:2%">
+            <div class="container">
+                <a href="pages/Math310/Chapter1.html">
+                    <img src="img/TQC.jpg" alt="Ordinary Differential Equation" class="image" />
+
+                    <div class="overlay">
+                        <div class="text">Ordinary Differential Equation</div>
+                    </div>
+                </a>
+            </div>
+            <div class="cardText">Math 310 - ODE</div>
+        </div>
+
+
+        <!--Physics Part-->
+        <h2 style="margin-left:2%;margin-top:25%;margin-bottom:0;"> Undergraduate Physics </h2>
+        <div class="card" style="margin-left:3%; margin-top:2%;margin-bottom:2%">
+            <div class="container">
+                <a href="pages/Phys100/Chapter1.html">
+                    <img src="/img/math.jpg" alt="High School Physics" class="image">
+
+                    <div class="overlay">
+                        <div class="text">High School Physics</div>
+                    </div>
+                </a>
+            </div>
+            <div class="cardText"> Phys 100 - High School Physics</div>
+        </div>
+
+
+        <div class="card" style="margin-left:27%; margin-top:2%">
+            <div class="container">
+                <a href="pages/Phys151/Chapter1.html">
+                    <img src="/img/physics.jpg" alt="Mechanics" class="image">
+
+
+                    <div class="overlay">
+                        <div class="text">Mechanics</div>
+                    </div>
+                </a>
+            </div>
+            <div class="cardText">Phys 151 - Mechanics</div>
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,46 +1,27 @@
 ﻿<!DOCTYPE html>
-<html lang="en-us">
+<html>
 <head>
     <meta charset="utf-8" />
+    <title>Hunt Feng</title>
+
     <style>
-
-        /*floating cards for different notes*/
-        .card {
-            width: 240px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            text-align: center;
-            background-color: white;
-            position: relative;
-            float: left;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
         /* This is for text fade in */
         .container {
             position: relative;
-            width: 100%;
-        }
-
-        .image {
-            width: 100%; 
-            height: 170px;
+            background-attachment: fixed;
+            padding: 250px;
         }
 
         .overlay {
             position: absolute;
             top: 0;
-            bottom: 0;
             left: 0;
-            right: 0;
             height: 100%;
             width: 100%;
             opacity: 0;
             transition: .3s ease;
-            background-color: rgba(128, 128, 128, 0.72);
+            background-color: rgba(255, 255, 255, 0.00);
+            text-align: center;
         }
 
         .container:hover .overlay {
@@ -48,49 +29,27 @@
         }
 
         .text {
+            /*this is for the white text on the pictures*/
             color: white;
-            font-size: 40px;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
             text-align: center;
         }
 
-        .cardText {
-            padding: 10px;
+
+        p {
+            /*for the paragraphs between pictures*/
+            text-align: center;
+            font-size: 17px;
+            word-wrap: break-word;
+            width: 60%;
+            transform: translateX(35%);
         }
 
-
-        /*body background image*/
-        html, body {
-            background-color: rgb(11, 11, 11);
-            background-image: url("img/back-ground-image1.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment:fixed;
-            position:relative;
+        body {
+            margin: 0;
         }
 
-        /*header*/
-        header{
-            display:block;
-            height:100px;
-        }
-
-        /* This is the white canvas */
-        .border {
-            width: 90%;
-            margin-left: 5%;
-            background-color: white;
-            position: absolute;
-            opacity: 0.95;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        /*Navigation bar*/
+        /*Nvigation bar*/
         ul {
             list-style-type: none;
             margin: 0;
@@ -98,7 +57,7 @@
             overflow: hidden;
             background-color: #333;
             top: 0;
-            
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         li {
@@ -120,86 +79,79 @@
         .active {
             background-color: #4CAF50;
         }
-        
     </style>
-    
-    <title>Hunt Feng</title>
+
+
 </head>
 <body>
-    <header>
-        <h1 style="text-align:center;"> Welcome to the world of Mathematical Phsics!</h1>
-        <h2 style="text-align:center; "> Here you will find all the stuff you need to start walking into the world of math and physics! </h2>
-    </header>
+    <h1 style="text-align:center">
+        Wellcome to the world of physics and math
+    </h1>
 
-    <div class="border">
-        <!--Navigation bar-->
-        <ul>
-            <li><a class="active" href="/personal_info.html">Home</a></li>
-            <li><a href="index.html">Notes</a></li>
-            <li><a href="index.html">Courses</a></li>
-        </ul>
+    <!--Navigation bar-->
+    <ul>
+        <li><a class="active" href="/index.html">Home</a></li>
+        <li><a href="/notes.html">Notes</a></li>
+        <li><a href="/courses.html">Courses</a></li>
+        <li><a href="/contactme.html">Contact me</a></li>
+    </ul>
 
-        <!--Math Part-->
-        <h2 style="margin-left:2%;margin-bottom:0;"> Undergraduate Math </h2>
-        <div class="card" style="margin-left:3%; margin-top:2%">
-            <div class="container">
-                <a href="pages/Math232/Chapter1.html">
-                    <img src="/img/QC.jpg" alt="Linear Algebra" class="image">
 
-                    <div class="overlay">
-                        <div class="text">Linear Algebra</div>
-                    </div>
-                </a>
+    <div class="container" style="background-image:url(img/bg_img1.JPG);">
+        <a href="notes.html">
+
+            <div class="text" style="width:40%; left:30%;top:50%;font-size:30px;border:solid">
+                Click to see what courses are offered!
             </div>
-            <div class="cardText"> Math 232 - Linear Algebra </div>
-        </div>
-
-
-        <div class="card" style="margin-left:27%; margin-top:2%">
-            <div class="container">
-                <a href="pages/Math310/Chapter1.html">
-                    <img src="img/TQC.jpg" alt="Ordinary Differential Equation" class="image" />
-
-                    <div class="overlay">
-                        <div class="text">Ordinary Differential Equation</div>
-                    </div>
-                </a>
+            <div class="overlay">
+                <div class="text" style="width:40%; left:30%;top:60%;font-size:20px">
+                    High school(grade 9-12) and College Math and Physics courses.
+                </div>
             </div>
-            <div class="cardText">Math 310 - ODE</div>
-        </div>
 
-
-        <!--Physics Part-->
-        <h2 style="margin-left:2%;margin-top:25%;margin-bottom:0;"> Undergraduate Physics </h2>
-        <div class="card" style="margin-left:3%; margin-top:2%;margin-bottom:2%">
-            <div class="container">
-                <a href="pages/Phys100/Chapter1.html">
-                    <img src="/img/math.jpg" alt="High School Physics" class="image">
-
-                    <div class="overlay">
-                        <div class="text">High School Physics</div>
-                    </div>
-                </a>
-            </div>
-            <div class="cardText"> Phys 100 - High School Physics</div>
-        </div>
-
-
-        <div class="card" style="margin-left:27%; margin-top:2%">
-            <div class="container">
-                <a href="pages/Phys151/Chapter1.html">
-                    <img src="/img/physics.jpg" alt="Mechanics" class="image">
-
-
-                    <div class="overlay">
-                        <div class="text">Mechanics</div>
-                    </div>
-                </a>
-            </div>
-            <div class="cardText">Phys 151 - Mechanics</div>
-        </div>
-
-
+        </a>
     </div>
+
+    <p style="font-size:25px">
+        <br /><br /><br />
+        A lonely science guy<br />
+    <p />
+    <p>
+        I am a student of Simon Fraser University,major in Mathematical Physics. <br />
+        It took me a long time to realize that I'm actually a lonely guy. I didn't have friends who study(the same things)
+        with me. And later on I understand that it is importnt to have friend to study with you, and you will no longer feel helpless
+        in the process of learning. Thus, this website is to help those struggling with physics and math alone.
+        <br /><br /><br /><br /><br />
+    </p>
+
+
+
+    <div class="container" style="background-image:url(img/bg_img.JPG)">
+        <a href="notes.html">
+            <div class="text" style="width:40%; left:30%;top:50%;font-size:30px;border:solid">
+                Click to see what notes are available!
+            </div>
+            <div class="overlay">
+                <div class="text" style="width:40%; left:30%;top:60%;font-size:20px">
+                    Learn it through the hard way! Take a look of these notes and start learning! New notes will be constantly uploaded.
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <p style="font-size:25px">
+        <br /><br />
+        Study Tips<br />
+    <p />
+
+    <p>
+        Learning is in fact a pain process despite the fact that physics and math are interesting, but you have to endure the pain in order
+        to absorb the knowledge. So just keep this in mind, when you see others learning faster or better than you does not mean they don't
+        feel this pain, it is just you have not yet get used to it. Thus you do not have to be frustrating when you feel like a dumb,
+        since others also don't have a faster way to master new knowledge, and you just need to endure during the process then you will master
+        some new stuff.In this website, you can find notes on some of the lectures. If you don't feel good, just contact,
+        I can be your tutor!
+    </p>
+
 </body>
 </html>
