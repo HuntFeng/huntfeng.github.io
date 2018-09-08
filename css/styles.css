@@ -1,6 +1,6 @@
 ﻿.contact {
-  position:fixed;
-  right:1%;
+    right: 1%;
+    position: absolute;
 }
       
 .accordion {
@@ -19,9 +19,22 @@
     transition: 0.4s;
 }
 
-.active, .accordion:hover {
-    background-color: #a0f2fe;
+.active , .accordion:hover {
+        background-color: #55f5ff;
+    }
+
+    .accordion:after {
+        content: '\002B'; /* \002B stands for "+" sign */
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+
+.accordion.active:after {
+    content: "\2212"; /* \002B stands for "-" sign */
 }
+
 
 .panel {
     padding: 0 18px;
@@ -33,11 +46,11 @@
 }
 
 .vertical-menu {
-    width: 10%;
+    width: 12%;
     height: 500px;
     position: fixed;
-  	top: 0px;
-  	left: 0px;
+    left: 0px;
+    top:0px;
 }
 
 .vertical-menu a {
@@ -53,6 +66,6 @@
 }
 
 .vertical-menu a.active {
-    background-color: #4CAF50;
-    color: white;
+        background-color: royalblue;
+        color: white;
 }
