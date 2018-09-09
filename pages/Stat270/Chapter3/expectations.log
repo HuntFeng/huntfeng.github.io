@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  9 SEP 2018 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  9 SEP 2018 11:22
 entering extended mode
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
 e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
@@ -564,46 +564,46 @@ LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 --- file expectations.css ---
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-l. 28 Writing expectations.idv[1] (expectations0x.svg)
-l. 29 Writing expectations.idv[2] (expectations1x.svg)
-l. 33 Writing expectations.idv[3] (expectations2x.svg)
-l. 34 Writing expectations.idv[4] (expectations3x.svg)
-l. 37 Writing expectations.idv[5] (expectations4x.svg)
+l. 29 Writing expectations.idv[1] (expectations0x.svg)
+l. 30 Writing expectations.idv[2] (expectations1x.svg)
+l. 35 Writing expectations.idv[3] (expectations2x.svg)
+l. 36 Writing expectations.idv[4] (expectations3x.svg)
+l. 39 Writing expectations.idv[5] (expectations4x.svg)
  [1
 
 ]
-l. 46 Writing expectations.idv[6] (expectations5x.svg)
-l. 47 Writing expectations.idv[7] (expectations6x.svg)
-l. 50 Writing expectations.idv[8] (expectations7x.svg)
-l. 52 Writing expectations.idv[9] (expectations8x.svg)
-l. 52 Writing expectations.idv[10] (expectations9x.svg)
-l. 52 Writing expectations.idv[11] (expectations10x.svg)
+l. 49 Writing expectations.idv[6] (expectations5x.svg)
+l. 50 Writing expectations.idv[7] (expectations6x.svg)
+l. 55 Writing expectations.idv[8] (expectations7x.svg)
  [2]
-l. 59 Writing expectations.idv[12] (expectations11x.svg)
-l. 60 Writing expectations.idv[13] (expectations12x.svg)
-l. 67 Writing expectations.idv[14] (expectations13x.svg)
-l. 70 Writing expectations.idv[15] (expectations14x.svg)
+l. 57 Writing expectations.idv[9] (expectations8x.svg)
+l. 57 Writing expectations.idv[10] (expectations9x.svg)
+l. 57 Writing expectations.idv[11] (expectations10x.svg)
+l. 64 Writing expectations.idv[12] (expectations11x.svg)
+l. 65 Writing expectations.idv[13] (expectations12x.svg)
+l. 74 Writing expectations.idv[14] (expectations13x.svg)
  [3]
-l. 78 Writing expectations.idv[16] (expectations15x.svg)
-l. 78 Writing expectations.idv[17] (expectations16x.svg)
+l. 77 Writing expectations.idv[15] (expectations14x.svg)
+l. 85 Writing expectations.idv[16] (expectations15x.svg)
+l. 85 Writing expectations.idv[17] (expectations16x.svg)
  [4]
 (expectations.aux) ) 
 Here is how much of TeX's memory you used:
- 5457 strings out of 493313
- 65556 string characters out of 3138925
- 255555 words of memory out of 3000000
- 8843 multiletter control sequences out of 15000+200000
+ 5464 strings out of 493313
+ 65661 string characters out of 3138925
+ 256564 words of memory out of 3000000
+ 8850 multiletter control sequences out of 15000+200000
  5993 words of font info for 24 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,11n,32p,828b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,11n,32p,828b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on expectations.dvi (4 pages, 20892 bytes).
+Output written on expectations.dvi (4 pages, 21460 bytes).
