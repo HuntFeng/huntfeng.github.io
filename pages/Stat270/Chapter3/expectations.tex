@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+The general rule of computing expectation (or easier word, mean) of some real value $g(x)$, is defined by
+\[ E(g(X)) = \sum_x g(x)p_X(x) \] 
+
+Expectation has a very nice property, it is a linear operator.
+\begin{property}
+	\[ E\left( \sum_{i=1}^n a_ig_i(X) \right) = \sum_{i=1}^n a_i E(g_i(x))\]
+	Where $a_i,g_i(x)\in\mathbb{R}, \forall i=1,2,...,n$.
+\end{property}
+\begin{proof}
+	\begin{align*}
+	E\left( \sum_{i=1}^n a_ig_i(X) \right) &= \sum_x \left( \sum_{i=1}^n a_ig_i(X) \right)p_X(x)\\
+	&= \sum_x (a_1g_1(x)+a_2g_2(x)+\cdots+a_ng_n(x) )p_X(x)\\
+	&= a_1\sum_xg_1(x)p_X(x) + a_2\sum_xg_2(x)p_X(x) + \cdots + a_n\sum_xg_n(x)p_X(x)\\
+	&= \sum_{i=1}^n a_iE(g(X))
+	\end{align*}
+\end{proof}
+
+
+Thus the expectation value of $X$ is defined by 
+\[ E(X) = \sum_x xp_X(x) \]
+Since the expectation value is linear, we easily see that
+\begin{property}
+	\[ E(aX+b) = aE(X)+b,\;\;a,b\in\mathbb{R} \]
+\end{property}
+This property states that if a random variable $X$ is transformed linearly to $aX+b$, then the expectation value of this new random variable is just the transformed version of the original one, namely, $aE(X)+b$.
+
+Geometrically, if all data on the histogram is transformed to some where else, then the measure of location(in this case, mean) will be also transformed in the same manner. \\
+
+
+
+
+The variance of the $X$ is defined by
+\begin{align*}
+ Var(X) &= E\left((X-E(X))^2 \right)\\ 
+ &= E(X^2) - (E(X))^2\\ 
+ &= \sum_x x^2p_X(x) - \left(\sum_x xp_X(x) \right)^2
+\end{align*}
+\[ \]
+Variance also has a meaningful property due to the linearity of expectation.
+\begin{property}
+	\[ Var(aX+b) = a^2Var(X),\;\;a,b\in\mathbb{R} \]
+\end{property}
+\begin{proof}
+	\begin{align*}
+	Var(aX+b) &=  E((aX+b)^2) - (E(aX+b))^2\\
+	&= E((aX)^2) + E(2abX) + E(b^2) - (aE(X)+b)^2\\
+	&= a^2E(X^2) + 2abE(X) + b^2 - a^2(E(X))^2 - 2abE(X) -b^2\\
+	&= a^2(E(X^2) - (E(X))^2)\\
+	&= a^2Var(X)
+	\end{align*}	
+\end{proof}
+This property states that if data is being shifted left or right, this spread of the data would not changed, thus the value $b$ does not have effect on variance; however, if the scale of the data is shrink or stretched, then the spread of the data would also be changed, thus the value $a$ has effect on variance. 
+
+
+
+
+\end{document}
+

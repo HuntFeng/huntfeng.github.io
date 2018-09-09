@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd-->  
+<html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
+<!-- xhtml,svg,pic-m,pic-align,html --> 
+<meta name="src" content="expectations.tex" /> 
+<link rel="stylesheet" type="text/css" href="expectations.css" /> 
+</head><body 
+>
+<!--l. 28--><p class="noindent" >The general rule of computing expectation (or easier word, mean) of some real value
+<img 
+src="expectations0x.svg" alt="g(x)  "  class="math"  />, is defined by
+</p>
+   <center class="math-display" >
+<img 
+src="expectations1x.svg" alt="          &#x2211;
+E(g(X )) =    g(x )pX (x )
+           x
+" class="math-display"  /></center>
+<!--l. 29--><p class="nopar" >
+</p><!--l. 31--><p class="indent" >   Expectation has a very nice property, it is a linear operator.
+</p>
+   <div class="newtheorem">
+<!--l. 32--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2r1"></a>
+<span 
+class="cmbx-10">Property 1.</span>  </span>
+</p>
+   <center class="math-display" >
+<img 
+src="expectations2x.svg" alt="  (  n       )    n
+E   &#x2211;  ag (X)  = &#x2211;  a E(g (x ))
+    i=1  ii       i=1 i   i
+" class="math-display"  /></center>
+<!--l. 33--><p class="nopar" > <span 
+class="cmti-10">Where</span> <img 
+src="expectations3x.svg" alt="ai,gi(x) &#x2208; &#x211D;,&#x2200;i = 1,2,...,n  "  class="math"  /><span 
+class="cmti-10">.</span>
+</p>
+   </div>
+<!--l. 36--><p class="indent" >
+</p>
+   <div class="proof">
+<!--l. 37--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>
+</p>
+
+   <div class="align"><img 
+src="expectations4x.svg" alt="pict"  /></div>
+                                                                __
+   </div>
+<!--l. 46--><p class="indent" >   Thus the expectation value of <img 
+src="expectations5x.svg" alt="X  "  class="math"  /> is defined by
+</p>
+   <center class="math-display" >
+<img 
+src="expectations6x.svg" alt="        &#x2211;
+E (X) =    xpX(x)
+         x
+" class="math-display"  /></center>
+<!--l. 47--><p class="nopar" > Since the expectation value is linear, we easily see that
+</p>
+   <div class="newtheorem">
+<!--l. 49--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3r2"></a>
+<span 
+class="cmbx-10">Property 2.</span>  </span>
+</p>
+   <center class="math-display" >
+<img 
+src="expectations7x.svg" alt="E(aX + b) = aE (X) +b,a,b &#x2208; &#x211D;
+" class="math-display"  /></center>
+<!--l. 50--><p class="nopar" >
+</p>
+   </div>
+<!--l. 52--><p class="indent" >   This property states that if a random variable <img 
+src="expectations8x.svg" alt="X  "  class="math"  /> is transformed linearly to
+<img 
+src="expectations9x.svg" alt="aX + b  "  class="math"  />, then the expectation value of this new random variable is just the
+transformed version of the original one, namely, <img 
+src="expectations10x.svg" alt="aE(X )+ b  "  class="math"  />.
+
+</p><!--l. 54--><p class="indent" >   Geometrically, if all data on the histogram is transformed to some where else,
+then the measure of location(in this case, mean) will be also transformed in the same
+manner. <br 
+class="newline" />
+</p><!--l. 59--><p class="indent" >   The variance of the <img 
+src="expectations11x.svg" alt="X  "  class="math"  /> is defined by
+</p>
+   <div class="align"><img 
+src="expectations12x.svg" alt="pict"  /></div>
+   <center class="par-math-display" >
+<img 
+src="expectations13x.svg" alt="
+" class="par-math-display"  /></center>
+<!--l. 65--><p class="nopar" > Variance also has a meaningful property due to the linearity of expectation.
+</p>
+   <div class="newtheorem">
+<!--l. 67--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4r3"></a>
+<span 
+class="cmbx-10">Property 3.</span>  </span>
+</p>
+   <center class="math-display" >
+<img 
+src="expectations14x.svg" alt="V ar(aX + b) = a2V ar(X),a,b &#x2208; &#x211D;
+" class="math-display"  /></center>
+<!--l. 68--><p class="nopar" >
+</p>
+   </div>
+<!--l. 70--><p class="indent" >
+</p>
+   <div class="proof">
+<!--l. 71--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>
+</p>
+
+   <div class="align"><img 
+src="expectations15x.svg" alt="pict"  /></div>
+                                                                __
+   </div>
+<!--l. 79--><p class="indent" >   This property states that if data is being shifted left or right, this spread
+of the data would not changed, thus the value <img 
+src="expectations16x.svg" alt="b  "  class="math"  /> does not have effect on
+variance; however, if the scale of the data is shrink or stretched, then the
+spread of the data would also be changed, thus the value <img 
+src="expectations17x.svg" alt="a  "  class="math"  /> has effect on
+variance.
+</p>
+    
+</body></html> 
+
+
+
