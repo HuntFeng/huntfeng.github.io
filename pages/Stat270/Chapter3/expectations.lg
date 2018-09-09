@@ -146,11 +146,9 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- expectations.idv[13] ==> expectations11x.svg ---
 --- needs --- expectations.idv[14] ==> expectations12x.svg ---
 --- needs --- expectations.idv[15] ==> expectations13x.svg ---
---- empty picture --- expectations.idv[15] ---
 --- needs --- expectations.idv[16] ==> expectations14x.svg ---
 --- needs --- expectations.idv[17] ==> expectations15x.svg ---
 --- needs --- expectations.idv[18] ==> expectations16x.svg ---
---- needs --- expectations.idv[19] ==> expectations17x.svg ---
 --- characters ---
 Font("cmex","10","10","100")
 Font("cmr","7","7","100")
