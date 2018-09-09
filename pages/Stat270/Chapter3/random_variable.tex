@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{definition}
+	A random variable $X$ is a function from a sample space $S$ to a set of numbers $E$ (i.e. $X:S\to E$). If $E=\mathbb{Z}$, then $X$ is said to be a discrete random variable; If $E=\mathbb{R}$, then $X$ is said to be a continuous random variable.
+\end{definition}
+
+It might seem so abstract in this way, but what it says is just: X maps the outcomes to some numbers. We will see that in the following examples.
+\begin{ex}
+	Let there be a fair coin, when I toss it, the sample space $S=\{H,T\}$. Let $X$ be a function defined on $S$ such that
+	\[ X(A) = \left\{  \begin{matrix}
+	&0 &,if\;A=T\\  &1 &,if\;A=H 
+	\end{matrix} \right. \]
+	Then $X$ is a discrete random variable. 
+\end{ex} 
+
+\begin{ex}
+	Suppose I rolled a dice 5 times. Let $X \equiv$ sum of 5 upward-faced numbers I got. This $X$ is a discrete random variable
+\end{ex}
+
+\begin{ex}
+	Let $Y\equiv$ waiting time at bus stop. This $Y$ is a continuous random variable.
+\end{ex}
+
+Since we have defined the random variable, we can now introduce the so-called \textbf{probability mass function}. 
+\begin{definition}
+	The probability mass function(pmf) of a discrete random variable $X$ is
+	\[p_X(x) = P(\{ A\in S| X(A) = x \}) \] 
+\end{definition}
+
+The pmf has the following two properties:
+\begin{property}
+$p_X(x)\geq 0, \forall x\in X(S)$
+\end{property}
+\begin{property}
+	$\sum_x p_X(x) =1$ 
+\end{property}
+
+
+Finally, we can define \textbf{cumulative distribution function} now.
+\begin{definition}
+	The cumulative distribution function(cdf) is defined as 
+	\[ F_X(x) = P(X\leq x) = \sum_{y<x} p_X(y) \]
+\end{definition}
+
+\end{document}
+
