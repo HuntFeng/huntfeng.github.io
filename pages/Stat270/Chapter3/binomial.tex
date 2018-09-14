@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+Binomial distribution is one of most common seen distributions, it is powerful for many situations.
+
+\begin{definition}
+	Binomial distribution is a family of distributions, it has two parameters, namely $n$ and $p$. If a discrete random variable $X$ has distribution
+	\[ p_X(x) = \left\{ \begin{matrix}
+	&\binom{n}{x} p^x(1-p)^{n-x} &,x=0,1,2,...,n\\
+	&0 &,\text{otherwise}
+	\end{matrix}     \right. \]
+	
+	we say that $X$ is binomially distributed, i.e. $X\sim Binomial(n,p)$.
+\end{definition} 
+Of course, the pmf of binomial distribution has the following two properties.
+\begin{property}
+	$ p(x) \geq 0,\;\;\forall x $
+\end{property}
+\begin{property}
+	$ \sum_x p(x) = 1 $
+\end{property}
+\begin{proof}
+	The first property is obvious. We are going to prove the second property. 
+	\[\sum_{x=0}^{n}\binom{n}{x} p^x(1-p)^{n-x} = (1+ (1-p))^n = 1 \] 
+	The first equality holds because of the binomial theorem.
+\end{proof}
+
+\begin{definition}
+	If $X\sim Binomial(n,p)$, then the cumulative distribution function(cdf) of $X$ is defined by
+	\[ F_X(x) = P(X\leq x) = \sum_{k=0}^x \binom{n}{k} p^k(1-p)^{n-k} \]
+\end{definition}
+
+
+We should talk about the expectations now.
+\begin{prop}
+	\begin{align}
+	&E(X) = \sum_x x\binom{n}{x} p^x(1-p)^{n-x} = np\\
+	&E(X^2) = \sum_x x^2\binom{n}{x} p^x(1-p)^{n-x} = np((n-1)p + 1)\\
+	&Var(X) = E(X^2) -(E(X))^2  = np(1-p) 
+	\end{align}
+\end{prop}
+\begin{proof}
+	We first prove (1), 
+	\begin{align*}
+	 \sum_{x=0}^n x\binom{n}{x} p^x(1-p)^{n-x} 
+	 &= 0 + \sum_{x=1}^n x\binom{n}{x} p^x(1-p)^{n-x}   \\
+	 &= \sum_{x=1}^n \frac{n!}{(x-1)!(n-x)!} p^x(1-p)^{n-x} \\
+	 &= np \sum_{x=1}^n \frac{(n-1)!}{(x-1)!(n-x)!} p^{x-1}(1-p)^{n-x}
+	\end{align*}
+	We now make two substitutions, $x-1\to k$, and $n-1\to m$, then
+	\[ E(X) = np \sum_{k=0}^n \frac{m!}{k!(m-k)!} p^k(1-p)^{m-k} = np \]
+	
+	The equation (2) can be derived in the similar manner, but with a little trick. Notice that $x^2 = x(x-1) + x$, then
+	\begin{align*}
+		E(X^2) &= E(X(X-1)) + E(X)\\
+		&= \sum_{x=0}^n x(x-1)\binom{n}{x} p^x(1-p)^{n-x} + np \\
+		&= \sum_{x=2}^n \frac{n!}{(x-2)!(n-x)!} p^x(1-p)^{n-x} + np \\
+		&= n(n-1)p^2\sum_{x=2}^n \frac{(n-1)!}{(x-2)!(n-x)!} p^{x-2}(1-p)^{n-x} + np\\
+		&= n(n-1)p^2\sum_{k=0}^m \frac{m!}{k!(m-k)!}p^k(1-p)^{n-x} + np\\
+		&= n(n-1)p^2 + np\\
+		&= np((n-1)p + 1)
+	\end{align*} 
+	
+	Equation (3) follows from the previous two.
+	\[ Var(X) = E(X^2) - (E(X))^2 = np((n-1)p+1) -(np)^2 = np(1-p) \]
+\end{proof}
+
+\end{document}
+

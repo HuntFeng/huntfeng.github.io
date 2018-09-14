@@ -1,0 +1,81 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+There are few important transformations we have to know. We first start by talking about linear transformation of a function. 
+\subsection*{Linear Transformations}
+By apply the linear transformations on the graph, shifts, stretch and compression: 
+\[f(x) \to af(b(x+c)) + d \]
+the point $(x,y)$ on the original graph will transformed to $(\frac{x}{b}-c,ay+d)$.
+
+
+There are four linear transformations on a function $f(x)$, controlled by four parameters a,b,c,d. 
+
+We first talk about the actions of c and d.
+
+c controls the horizontal shift and d controls the vertical shift.
+
+\begin{ex}
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!! add demos graph here !!!!!!!!!!!!!!!!!!!!!!!!
+\end{ex}
+
+
+a and b controls horizontal and vertical stretch and compression. However, their behaviors are a little different. For a, it stretches(if $|a|>1$) or compresses(if $0<|a|<1$) the graph vertically by a factor factor of $|a|$, and if $a<0$, then the graph will be flipped about the x-axis. Meanwhile, b stretches(if $0<|b|<1$) or compresses(if $|b|>1$) the graph by a factor of $1/|b|$. If $b<0$, the graph is flipped about the y-axis.
+
+\begin{ex}
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!! add demos graph here !!!!!!!!!!!!!!!!!!!!!!!!
+\end{ex}
+      
+\subsection*{Absolute Value}
+Let's see what can absolute value function do on the graphs. 
+
+Typically, there are two most common-used such transformations in Calculus.
+\begin{align}
+f(x) \to |f(x)|\\
+f(x) \to f(|x|)
+\end{align} 
+
+The first one is easy, the absolute value function flips the part where the function values $f(x)<0$ about the x-axis.
+\begin{ex}
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!! add demos graph here !!!!!!!!!!!!!!!!!!!!!!!!
+\end{ex}
+
+The second one is a little bit tricky. The absolute value function only acts on the variable $x$, we can see that $f(|x|)$ actually becomes an even function since 
+\[ f(|-x|) = f(|x|) \]
+and we by the definition of absolute value function,
+\[ f(|x|) = \left\{ \begin{matrix}
+f(x)\;,x\geq 0\\ f(-x)\;,x<0
+\end{matrix}  \right. \] 
+we see that after the transformation, the left part($x<0$) of the graph disappeared and became the the mirror image of the right part($x>0$) of the graph.
+\begin{ex}
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!! add demos graph here !!!!!!!!!!!!!!!!!!!!!!!!
+\end{ex} 
+
+
+
+
+\end{document}
+

@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{definition}
+	If a discrete random variable $X$ is distributed according Poisson distribution, then it has pmf
+	\[ p_X(x) = \left\{  \begin{matrix}
+	&\lambda^x \frac{e^{-\lambda}}{x!} &,x=1,2,...\\ 
+	&0 &,\text{otherwise}
+	\end{matrix} \right. \]
+	where $\lambda\in\mathbb{R}^+$ is the parameter of Poisson distribution, and we denote $X\sim Poisson(\lambda)$. Again Poisson distribution is not just one distribution, but a family of a set of distributions with parameter $\lambda$. 
+\end{definition}
+
+Poisson distribution is especially good for modeling rare events.
+
+Poisson distribution also has that two properties.
+\begin{property}
+	$p(x) \geq 0,\;\;\forall x$
+\end{property}
+\begin{property}
+	$\sum_x p(x) = 1 $
+\end{property} 
+\begin{proof}
+	First one is obvious, I am going prove the second one.
+	\[\sum_{x=0}^\infty \lambda^x \frac{e^{-\lambda}}{x!} = e^{-\lambda} \sum_{x=0}^\infty \frac{\lambda^x}{x!} = e^{-\lambda}e^{\lambda} =1 \]
+\end{proof}
+
+
+\end{document}
+
