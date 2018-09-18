@@ -1,0 +1,7 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Polynomials}}{1}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Rational functions}}{1}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Exponential Functions}}{2}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{Logrithms}}{2}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-5}{Trigonometric Functions}}{3}\relax 
+\par 

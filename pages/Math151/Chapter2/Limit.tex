@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{definition}
+	 We say that a function's limit exits at $x= x_0$,i.e 
+	 \[ \lim_{x\to x_0} f(x) = L \]
+	 if this statement is true: $\forall \epsilon>0, \exists \delta>0$ such that if $0<|x-x_0|<\delta$, then
+	\[ |f(x)-L| < \epsilon \]
+\end{definition}
+
+\begin{ex}
+	Let $f(x) = \frac{(x+1)(x-1)}{(x+1)x} $.
+	\begin{center}
+	!!!!!!!!!!!!!!!! demos graph !!!!!!!!!!!!!!!!!!!!!!
+	\end{center}
+We see that from the graph 
+\[ \lim_{x\to1} f(x) = 0 \]
+\[ \lim_{x\to0} f(x) = DNE\]
+\[ \lim_{x\to-1} f(x) = 2 \]
+
+\end{ex}
+
+Notes: The limit of a function at some points $x_0$ has nothing to do with the function value at that point.
+
+\begin{thm}
+	\begin{align*}
+	&\lim (f(x) \pm g(x) = \lim f(x) \pm \lim g(x)\\
+	&\lim (f(x) \times g(x) = \lim f(x) \times \lim g(x)\\
+	&\lim \frac{f(x)}{g(x)} =\frac{ \lim f(x)}{\lim g(x)}\\
+	\end{align*}
+\end{thm}
+
+\begin{ex}
+	\[\lim_{x\to 0}(\cos x+ \sin x) = \lim_{x\to 0}\cos x + \lim_{x\to 0}\sin x = 1+ 0 =1 \]
+\end{ex}
+
+\begin{ex}
+	\[ \lim_{x\to 1} \frac{x^2}{x+1} = \frac{\lim_{x\to1} x^2}{\lim_{x\to 1}(x+1)} = \frac{1}{2} \]
+\end{ex}
+ 
+
+
+
+\end{document}
+
