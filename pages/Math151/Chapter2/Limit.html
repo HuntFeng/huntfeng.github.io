@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
-<!-- xhtml,svg,pic-m,html --> 
+<!-- xhtml,svg,pic-m,pic-align,html --> 
 <meta name="src" content="Limit.tex" /> 
 <link rel="stylesheet" type="text/css" href="Limit.css" /> 
 </head><body 
@@ -54,7 +54,9 @@ class="cmti-10">.</span> </p>
 <div class="center" 
 >
 <!--l. 37--><p class="noindent" >
-</p><!--l. 38--><p class="noindent" > <iframe src="https://www.desmos.com/calculator/o670pjhm9k" width="100%" height="600px" style="border: 1px solid #ccc" frameborder=0></iframe> </p></div>
+</p><!--l. 38--><p class="noindent" >
+     <iframe src="https://www.desmos.com/calculator/qiai6un5yd" width="100%" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe></p></div>
+     </p></div>
 <!--l. 40--><p class="noindent" ><span 
 class="cmti-10">We see that from the graph</span>
 </p>
@@ -91,52 +93,9 @@ function value at that point.
  id="x1-4r1"></a>
 <span 
 class="cmbx-10">Theorem 1.</span>  </span>
-</p><table 
-class="align-star">
-                 <tr><td 
-class="align-odd"></td>                 <td 
-class="align-even">lim(<span 
-class="cmmi-10">f</span>(<span 
-class="cmmi-10">x</span>) <span 
-class="cmsy-10">± </span><span 
-class="cmmi-10">g</span>(<span 
-class="cmmi-10">x</span>) = lim<span 
-class="cmmi-10">f</span>(<span 
-class="cmmi-10">x</span>) <span 
-class="cmsy-10">±</span> lim<span 
-class="cmmi-10">g</span>(<span 
-class="cmmi-10">x</span>)</td>                 <td 
-class="align-label"></td>                 <td 
-class="align-label">
-                 </td></tr><tr><td 
-class="align-odd"></td>                 <td 
-class="align-even">lim(<span 
-class="cmmi-10">f</span>(<span 
-class="cmmi-10">x</span>) <span 
-class="cmsy-10">&#x00D7; </span><span 
-class="cmmi-10">g</span>(<span 
-class="cmmi-10">x</span>) = lim<span 
-class="cmmi-10">f</span>(<span 
-class="cmmi-10">x</span>) <span 
-class="cmsy-10">&#x00D7;</span> lim<span 
-class="cmmi-10">g</span>(<span 
-class="cmmi-10">x</span>)</td>                 <td 
-class="align-label"></td>                 <td 
-class="align-label">
-                 </td></tr><tr><td 
-class="align-odd"></td>                 <td 
-class="align-even">lim<img 
-src="Limit10x.svg" alt="f(x)
-g(x)"  class="frac" align="middle" /> = <img 
-src="Limit11x.svg" alt="lim-f(x)
-lim g(x)"  class="frac" align="middle" /></td>                               <td 
-class="align-label"></td>                 <td 
-class="align-label">
-                 </td></tr><tr><td 
-class="align-odd"></td>                 <td 
-class="align-even"></td>                                                 <td 
-class="align-label">                 </td></tr></table>
-
+</p>
+   <div class="align"><img 
+src="Limit10x.svg" alt="pict"  /></div>
    </div>
    <div class="newtheorem">
 <!--l. 57--><p class="noindent" ><span class="head">
@@ -145,9 +104,11 @@ class="align-label">                 </td></tr></table>
 <span 
 class="cmbx-10">Example 2.</span>  </span>
 </p>
+
    <center class="math-display" >
 <img 
-src="Limit12x.svg" alt="xli&#x2192;m0 (cosx + sinx) = lixm&#x2192;0cosx +xli&#x2192;m0 sin x = 1 +0 = 1
+src="Limit11x.svg" alt=" lim (cosx + sinx) = lim cosx + lim sin x = 1 +0 = 1
+x&#x2192;0               x&#x2192;0      x&#x2192;0
 " class="math-display"  /></center>
 <!--l. 58--><p class="nopar" >
 </p>
@@ -161,12 +122,73 @@ class="cmbx-10">Example 3.</span>  </span>
 </p>
    <center class="math-display" >
 <img 
-src="Limit13x.svg" alt="      2             2
-lim -x---= --limx-&#x2192;1x--- = 1
+src="Limit12x.svg" alt="lim -x2--= --limx-&#x2192;1x2-- = 1
 x&#x2192;1 x+ 1   limx &#x2192;1(x+ 1)   2
 " class="math-display"  /></center>
 <!--l. 62--><p class="nopar" >
 </p>
+   </div>
+   <div class="newtheorem">
+<!--l. 65--><p class="noindent" ><span class="head">
+<a 
+ id="x1-7r4"></a>
+<span 
+class="cmbx-10">Example 4.</span>  </span>
+</p>
+   <center class="math-display" >
+<img 
+src="Limit13x.svg" alt="     x2 +3x + 2
+xl&#x2192;im-1---x+-1---
+" class="math-display"  /></center>
+<!--l. 66--><p class="nopar" >
+</p><!--l. 68--><p class="indent" >   <span 
+class="cmti-10">If we simply plug in the value</span> <img 
+src="Limit14x.svg" alt="x = - 1  "  class="math"  /><span 
+class="cmti-10">, we will have a 0/0 situation, this is not</span>
+<span 
+class="cmti-10">good. However, we see that the the term causing the problem,</span> <img 
+src="Limit15x.svg" alt="x + 1  "  class="math"  /><span 
+class="cmti-10">, can be canceled.</span>
+<span 
+class="cmti-10">Thus</span>
+</p>
+
+   <div class="align"><img 
+src="Limit16x.svg" alt="pict"  /></div>
+<!--l. 76--><p class="indent" >   <span 
+class="cmti-10">Although we know that the function value at</span> <img 
+src="Limit17x.svg" alt="x = - 1  "  class="math"  /> <span 
+class="cmti-10">is still undefined, but its</span>
+<span 
+class="cmti-10">limit at</span> <img 
+src="Limit18x.svg" alt="x = - 1  "  class="math"  /> <span 
+class="cmti-10">has nothing to do with the function.</span>
+</p>
+   </div>
+   <div class="newtheorem">
+<!--l. 79--><p class="noindent" ><span class="head">
+<a 
+ id="x1-8r5"></a>
+<span 
+class="cmbx-10">Example 5.</span>  </span>
+</p>
+   <center class="math-display" >
+<img 
+src="Limit19x.svg" alt="    --x---2---
+lxim&#x2192;2 &#x221A;x---1- 1
+" class="math-display"  /></center>
+<!--l. 80--><p class="nopar" >
+</p><!--l. 82--><p class="indent" >   <span 
+class="cmti-10">If we simply put the the value</span> <img 
+src="Limit20x.svg" alt="x = 2  "  class="math"  /><span 
+class="cmti-10">, we again encounter the 0/0 situation.</span>
+<span 
+class="cmti-10">However, when we see square root, try to use the square difference formula to</span>
+<span 
+class="cmti-10">simplify the expression first.</span>
+</p>
+   <div class="align"><img 
+src="Limit21x.svg" alt="pict"  /></div>
    </div>
     
 </body></html> 

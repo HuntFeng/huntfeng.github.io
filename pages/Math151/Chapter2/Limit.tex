@@ -35,7 +35,7 @@
 \begin{ex}
 	Let $f(x) = \frac{(x+1)(x-1)}{(x+1)x} $.
 	\begin{center}
-	!!!!!!!!!!!!!!!! demos graph !!!!!!!!!!!!!!!!!!!!!!
+	 !!!!!!!!!!!!demos !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	\end{center}
 We see that from the graph 
 \[ \lim_{x\to1} f(x) = 0 \]
@@ -62,7 +62,37 @@ Notes: The limit of a function at some points $x_0$ has nothing to do with the f
 	\[ \lim_{x\to 1} \frac{x^2}{x+1} = \frac{\lim_{x\to1} x^2}{\lim_{x\to 1}(x+1)} = \frac{1}{2} \]
 \end{ex}
  
+\begin{ex}
+	\[\lim_{x\to-1}\frac{x^2 + 3x + 2}{x+1}\]
+	
+	If we simply plug in the value $x=-1$, we will have a 0/0 situation, this is not good. However, we see that the the term causing the problem, $x+1$, can be canceled. Thus
+	\begin{align*}
+		\lim_{x\to-1} \frac{x^2 +3x +2 }{x+1} 
+		&= \lim_{x\to-1} \frac{(x+1)(x+2)}{x+1}\\
+		&= \lim_{x\to-1} x+2\\
+		&= 1
+	\end{align*}
+	
+	Although we know that the function value at $x=-1$ is still undefined, but its limit at $x=-1$ has nothing to do with the function.   
+\end{ex}
 
+\begin{ex}
+	\[\lim_{x\to2}\frac{x-2}{\sqrt{x-1} -1}\]
+	
+	If we simply put the the value $x=2$, we again encounter the 0/0 situation.
+	However, when we see square root, try to use the square difference formula to simplify the expression first.
+	
+	\begin{align*}
+	\lim_{x\to2}\frac{x-2}{\sqrt{x-1} -1} 
+	&= \lim_{x\to2}\frac{(x-2)(\sqrt{x-1}+1)}{(\sqrt{x-1} -1)(\sqrt{x-1}+1)}\\
+	&= \lim_{x\to2} \frac{(x-2)(\sqrt{x-1}+1)}{x-2}\\
+	&= \lim_{x\to2} \sqrt{x-1}+1\\
+	&= 2 
+	\end{align*} 
+\end{ex}
+
+
+Note: When dealing with limit, if some situations occur(e.g 0/0), remember to simplify or adjust the expression before you further calculate.
 
 
 \end{document}

@@ -3,12 +3,11 @@ htfcss: cmbxsl  font-weight: bold; font-style: oblique;
 htfcss: cmti  font-style: italic;
 htfcss: cmmi font-style: italic;
 htfcss: cmmib font-style: italic; font-weight: bold;
-File: Limit.html
-File: Limit.css
-File: Limit.tmp
-File: Limit.tmp
-File: Limit.tmp
-File: Limit.tmp
+File: Limit_and_asymptote.html
+File: Limit_and_asymptote.css
+File: Limit_and_asymptote.tmp
+File: Limit_and_asymptote.tmp
+File: Limit_and_asymptote.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -132,29 +131,28 @@ Css: td.gather {text-align:center; }
 Css: table.gather {width:100%;}
 Css: div.gather-star {text-align:center;}
 Css: .figure img.graphics {margin-left:10%;}
---- needs --- Limit.idv[2] ==> Limit0x.svg ---
---- needs --- Limit.idv[3] ==> Limit1x.svg ---
---- needs --- Limit.idv[4] ==> Limit2x.svg ---
---- needs --- Limit.idv[5] ==> Limit3x.svg ---
---- needs --- Limit.idv[6] ==> Limit4x.svg ---
---- needs --- Limit.idv[7] ==> Limit5x.svg ---
---- needs --- Limit.idv[8] ==> Limit6x.svg ---
---- needs --- Limit.idv[9] ==> Limit7x.svg ---
---- needs --- Limit.idv[10] ==> Limit8x.svg ---
---- needs --- Limit.idv[11] ==> Limit9x.svg ---
---- needs --- Limit.idv[12] ==> Limit10x.svg ---
---- needs --- Limit.idv[13] ==> Limit11x.svg ---
---- needs --- Limit.idv[14] ==> Limit12x.svg ---
---- needs --- Limit.idv[15] ==> Limit13x.svg ---
---- needs --- Limit.idv[16] ==> Limit14x.svg ---
---- needs --- Limit.idv[17] ==> Limit15x.svg ---
---- needs --- Limit.idv[18] ==> Limit16x.svg ---
---- needs --- Limit.idv[19] ==> Limit17x.svg ---
---- needs --- Limit.idv[20] ==> Limit18x.svg ---
---- needs --- Limit.idv[21] ==> Limit19x.svg ---
---- needs --- Limit.idv[22] ==> Limit20x.svg ---
---- needs --- Limit.idv[23] ==> Limit21x.svg ---
+--- needs --- Limit_and_asymptote.idv[2] ==> Limit_and_asymptote0x.svg ---
+--- needs --- Limit_and_asymptote.idv[3] ==> Limit_and_asymptote1x.svg ---
+--- needs --- Limit_and_asymptote.idv[4] ==> Limit_and_asymptote2x.svg ---
+--- needs --- Limit_and_asymptote.idv[5] ==> Limit_and_asymptote3x.svg ---
+--- needs --- Limit_and_asymptote.idv[6] ==> Limit_and_asymptote4x.svg ---
+--- needs --- Limit_and_asymptote.idv[7] ==> Limit_and_asymptote5x.svg ---
+--- needs --- Limit_and_asymptote.idv[8] ==> Limit_and_asymptote6x.svg ---
+--- needs --- Limit_and_asymptote.idv[9] ==> Limit_and_asymptote7x.svg ---
+--- needs --- Limit_and_asymptote.idv[10] ==> Limit_and_asymptote8x.svg ---
+--- needs --- Limit_and_asymptote.idv[11] ==> Limit_and_asymptote9x.svg ---
+--- needs --- Limit_and_asymptote.idv[12] ==> Limit_and_asymptote10x.svg ---
+--- needs --- Limit_and_asymptote.idv[13] ==> Limit_and_asymptote11x.svg ---
+--- needs --- Limit_and_asymptote.idv[14] ==> Limit_and_asymptote12x.svg ---
+--- needs --- Limit_and_asymptote.idv[15] ==> Limit_and_asymptote13x.svg ---
+--- needs --- Limit_and_asymptote.idv[16] ==> Limit_and_asymptote14x.svg ---
+--- needs --- Limit_and_asymptote.idv[17] ==> Limit_and_asymptote15x.svg ---
+--- needs --- Limit_and_asymptote.idv[18] ==> Limit_and_asymptote16x.svg ---
+--- needs --- Limit_and_asymptote.idv[19] ==> Limit_and_asymptote17x.svg ---
+--- needs --- Limit_and_asymptote.idv[20] ==> Limit_and_asymptote18x.svg ---
+--- needs --- Limit_and_asymptote.idv[21] ==> Limit_and_asymptote19x.svg ---
 --- characters ---
+Font("cmex","10","10","100")
 Font("cmr","5","5","100")
 Font("cmr","7","7","100")
 Font("cmr","10","10","100")
@@ -164,3 +162,4 @@ Font("cmsy","7","7","100")
 Font("cmsy","10","10","100")
 Font("cmti","10","10","100")
 Font("cmbx","10","10","100")
+Font("msbm","10","10","100")

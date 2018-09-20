@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  19 SEP 2018 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  19 SEP 2018 20:39
 entering extended mode
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
 e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
@@ -6,8 +6,9 @@ e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
 umentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname te
 x4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HC
 ode}{\documentstyle[tex4ht]}}}\makeatother\HCode xhtml,svg,pic-m,pic-align.a.b.
-c.\input  Limit
-(Limit.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+c.\input  Limit_and_asymptote
+(Limit_and_asymptote.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -159,15 +160,15 @@ version 2017-05-09-09:21
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\tex4ht.sty"
 version 2016-07-18-16:08
 
---- needs --- tex4ht Limit ---
+--- needs --- tex4ht Limit_and_asymptote ---
 \tmp:cnt=\count105
-\openout15 = `Limit.tmp'.
+\openout15 = `Limit_and_asymptote.tmp'.
 
-(Limit.tmp)
+(Limit_and_asymptote.tmp)
 \tmp:dim=\skip49
- (Limit.xref)
+ (Limit_and_asymptote.xref)
 \:refout=\write3
-\openout3 = `Limit.xref'.
+\openout3 = `Limit_and_asymptote.xref'.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
@@ -277,10 +278,10 @@ version 2016-03-31-11:13
 --- Note --- for linear crosslinks of pages, use the command line option `next'
 
 --------------------------------------
-\openout15 = `Limit.4ct'.
+\openout15 = `Limit_and_asymptote.4ct'.
 
 \:tocout=\write4
-\openout4 = `Limit.4tc'.
+\openout4 = `Limit_and_asymptote.4tc'.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
@@ -547,8 +548,9 @@ version 2017-03-30-16:04
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
 version 2017-05-09-09:46
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht")) (Limit.aux)
-\openout1 = `Limit.aux'.
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+(Limit_and_asymptote.aux)
+\openout1 = `Limit_and_asymptote.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -562,7 +564,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
---- file Limit.css ---
+--- file Limit_and_asymptote.css ---
 LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -573,42 +575,39 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-l. 29 Writing Limit.idv[1] (Limit0x.svg)
-l. 30 Writing Limit.idv[2] (Limit1x.svg)
-l. 31 Writing Limit.idv[3] (Limit2x.svg)
-l. 31 Writing Limit.idv[4] (Limit3x.svg)
-l. 32 Writing Limit.idv[5] (Limit4x.svg)
-l. 36 Writing Limit.idv[6] (Limit5x.svg)
-l. 41 Writing Limit.idv[7] (Limit6x.svg)
-l. 42 Writing Limit.idv[8] (Limit7x.svg)
+l. 29 Writing Limit_and_asymptote.idv[1] (Limit_and_asymptote0x.svg)
+l. 29 Writing Limit_and_asymptote.idv[2] (Limit_and_asymptote1x.svg)
+l. 29 Writing Limit_and_asymptote.idv[3] (Limit_and_asymptote2x.svg)
+l. 30 Writing Limit_and_asymptote.idv[4] (Limit_and_asymptote3x.svg)
+l. 31 Writing Limit_and_asymptote.idv[5] (Limit_and_asymptote4x.svg)
+l. 31 Writing Limit_and_asymptote.idv[6] (Limit_and_asymptote5x.svg)
+l. 31 Writing Limit_and_asymptote.idv[7] (Limit_and_asymptote6x.svg)
+l. 32 Writing Limit_and_asymptote.idv[8] (Limit_and_asymptote7x.svg)
+l. 37 Writing Limit_and_asymptote.idv[9] (Limit_and_asymptote8x.svg)
  [1
 
 ]
-l. 43 Writing Limit.idv[9] (Limit8x.svg)
-l. 47 Writing Limit.idv[10] (Limit9x.svg)
-l. 50 Writing Limit.idv[11] (Limit10x.svg)
-l. 58 Writing Limit.idv[12] (Limit11x.svg)
+l. 45 Writing Limit_and_asymptote.idv[10] (Limit_and_asymptote9x.svg)
+l. 48 Writing Limit_and_asymptote.idv[11] (Limit_and_asymptote10x.svg)
+l. 49 Writing Limit_and_asymptote.idv[12] (Limit_and_asymptote11x.svg)
+l. 59 Writing Limit_and_asymptote.idv[13] (Limit_and_asymptote12x.svg)
+l. 60 Writing Limit_and_asymptote.idv[14] (Limit_and_asymptote13x.svg)
+l. 60 Writing Limit_and_asymptote.idv[15] (Limit_and_asymptote14x.svg)
+l. 61 Writing Limit_and_asymptote.idv[16] (Limit_and_asymptote15x.svg)
  [2]
-l. 62 Writing Limit.idv[13] (Limit12x.svg)
-l. 66 Writing Limit.idv[14] (Limit13x.svg)
-l. 68 Writing Limit.idv[15] (Limit14x.svg)
-l. 68 Writing Limit.idv[16] (Limit15x.svg)
-l. 69 Writing Limit.idv[17] (Limit16x.svg)
- [3]
-l. 76 Writing Limit.idv[18] (Limit17x.svg)
-l. 76 Writing Limit.idv[19] (Limit18x.svg)
-l. 80 Writing Limit.idv[20] (Limit19x.svg)
-l. 82 Writing Limit.idv[21] (Limit20x.svg)
-l. 85 Writing Limit.idv[22] (Limit21x.svg)
- [4]
-[5] (Limit.aux) ) 
+l. 63 Writing Limit_and_asymptote.idv[17] (Limit_and_asymptote16x.svg)
+l. 65 Writing Limit_and_asymptote.idv[18] (Limit_and_asymptote17x.svg)
+l. 71 Writing Limit_and_asymptote.idv[19] (Limit_and_asymptote18x.svg)
+l. 74 Writing Limit_and_asymptote.idv[20] (Limit_and_asymptote19x.svg)
+ [3] [4]
+(Limit_and_asymptote.aux) ) 
 Here is how much of TeX's memory you used:
- 5468 strings out of 493313
- 65562 string characters out of 3138925
- 256539 words of memory out of 3000000
- 8854 multiletter control sequences out of 15000+200000
+ 5462 strings out of 493313
+ 65734 string characters out of 3138925
+ 256589 words of memory out of 3000000
+ 8848 multiletter control sequences out of 15000+200000
  5993 words of font info for 24 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,11n,32p,679b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,12n,32p,693b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Limit.dvi (5 pages, 22312 bytes).
+Output written on Limit_and_asymptote.dvi (4 pages, 21596 bytes).
