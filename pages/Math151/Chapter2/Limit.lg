@@ -1,10 +1,13 @@
+htfcss: cmbxti  font-weight: bold; font-style: italic;
+htfcss: cmti  font-style: italic;
 htfcss: cmbx  font-weight: bold;
 htfcss: cmbxsl  font-weight: bold; font-style: oblique;
-htfcss: cmti  font-style: italic;
 htfcss: cmmi font-style: italic;
 htfcss: cmmib font-style: italic; font-weight: bold;
 File: Limit.html
 File: Limit.css
+File: Limit.tmp
+File: Limit.tmp
 File: Limit.tmp
 File: Limit.tmp
 File: Limit.tmp
@@ -154,13 +157,26 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- Limit.idv[21] ==> Limit19x.svg ---
 --- needs --- Limit.idv[22] ==> Limit20x.svg ---
 --- needs --- Limit.idv[23] ==> Limit21x.svg ---
+--- needs --- Limit.idv[24] ==> Limit22x.svg ---
+--- needs --- Limit.idv[25] ==> Limit23x.svg ---
+--- needs --- Limit.idv[26] ==> Limit24x.svg ---
+--- needs --- Limit.idv[27] ==> Limit25x.svg ---
+--- needs --- Limit.idv[28] ==> Limit26x.svg ---
+--- needs --- Limit.idv[29] ==> Limit27x.svg ---
+--- needs --- Limit.idv[30] ==> Limit28x.svg ---
+--- needs --- Limit.idv[31] ==> Limit29x.svg ---
+--- needs --- Limit.idv[32] ==> Limit30x.svg ---
+--- needs --- Limit.idv[33] ==> Limit31x.svg ---
+--- needs --- Limit.idv[34] ==> Limit32x.svg ---
 --- characters ---
 Font("cmr","5","5","100")
 Font("cmr","7","7","100")
 Font("cmr","10","10","100")
 Font("cmmi","7","7","100")
 Font("cmmi","10","10","100")
+Font("cmsy","5","5","100")
 Font("cmsy","7","7","100")
 Font("cmsy","10","10","100")
 Font("cmti","10","10","100")
 Font("cmbx","10","10","100")
+Font("cmbxti","10","10","100")

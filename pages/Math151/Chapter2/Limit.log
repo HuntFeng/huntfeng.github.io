@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  19 SEP 2018 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  21 SEP 2018 16:06
 entering extended mode
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
 e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
@@ -563,52 +563,65 @@ LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 --- file Limit.css ---
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-l. 29 Writing Limit.idv[1] (Limit0x.svg)
-l. 30 Writing Limit.idv[2] (Limit1x.svg)
-l. 31 Writing Limit.idv[3] (Limit2x.svg)
-l. 31 Writing Limit.idv[4] (Limit3x.svg)
-l. 32 Writing Limit.idv[5] (Limit4x.svg)
-l. 36 Writing Limit.idv[6] (Limit5x.svg)
-l. 41 Writing Limit.idv[7] (Limit6x.svg)
-l. 42 Writing Limit.idv[8] (Limit7x.svg)
+l. 30 Writing Limit.idv[1] (Limit0x.svg)
+l. 31 Writing Limit.idv[2] (Limit1x.svg)
+l. 32 Writing Limit.idv[3] (Limit2x.svg)
+l. 32 Writing Limit.idv[4] (Limit3x.svg)
+l. 33 Writing Limit.idv[5] (Limit4x.svg)
+l. 37 Writing Limit.idv[6] (Limit5x.svg)
+l. 42 Writing Limit.idv[7] (Limit6x.svg)
  [1
 
 ]
-l. 43 Writing Limit.idv[9] (Limit8x.svg)
-l. 47 Writing Limit.idv[10] (Limit9x.svg)
-l. 50 Writing Limit.idv[11] (Limit10x.svg)
-l. 58 Writing Limit.idv[12] (Limit11x.svg)
+l. 43 Writing Limit.idv[8] (Limit7x.svg)
+l. 44 Writing Limit.idv[9] (Limit8x.svg)
+l. 48 Writing Limit.idv[10] (Limit9x.svg)
+l. 51 Writing Limit.idv[11] (Limit10x.svg)
+l. 59 Writing Limit.idv[12] (Limit11x.svg)
  [2]
-l. 62 Writing Limit.idv[13] (Limit12x.svg)
-l. 66 Writing Limit.idv[14] (Limit13x.svg)
-l. 68 Writing Limit.idv[15] (Limit14x.svg)
-l. 68 Writing Limit.idv[16] (Limit15x.svg)
-l. 69 Writing Limit.idv[17] (Limit16x.svg)
+l. 63 Writing Limit.idv[13] (Limit12x.svg)
+l. 67 Writing Limit.idv[14] (Limit13x.svg)
+l. 69 Writing Limit.idv[15] (Limit14x.svg)
+l. 69 Writing Limit.idv[16] (Limit15x.svg)
+l. 70 Writing Limit.idv[17] (Limit16x.svg)
  [3]
-l. 76 Writing Limit.idv[18] (Limit17x.svg)
-l. 76 Writing Limit.idv[19] (Limit18x.svg)
-l. 80 Writing Limit.idv[20] (Limit19x.svg)
-l. 82 Writing Limit.idv[21] (Limit20x.svg)
-l. 85 Writing Limit.idv[22] (Limit21x.svg)
+l. 77 Writing Limit.idv[18] (Limit17x.svg)
+l. 77 Writing Limit.idv[19] (Limit18x.svg)
+l. 81 Writing Limit.idv[20] (Limit19x.svg)
+l. 83 Writing Limit.idv[21] (Limit20x.svg)
+l. 86 Writing Limit.idv[22] (Limit21x.svg)
  [4]
-[5] (Limit.aux) ) 
-Here is how much of TeX's memory you used:
- 5468 strings out of 493313
- 65562 string characters out of 3138925
- 256539 words of memory out of 3000000
- 8854 multiletter control sequences out of 15000+200000
- 5993 words of font info for 24 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 30i,11n,32p,679b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
+l. 100 Writing Limit.idv[23] (Limit22x.svg)
+l. 100 Writing Limit.idv[24] (Limit23x.svg)
+l. 100 Writing Limit.idv[25] (Limit24x.svg)
+l. 101 Writing Limit.idv[26] (Limit25x.svg)
+l. 108 Writing Limit.idv[27] (Limit26x.svg)
+l. 108 Writing Limit.idv[28] (Limit27x.svg)
+l. 109 Writing Limit.idv[29] (Limit28x.svg)
+l. 117 Writing Limit.idv[30] (Limit29x.svg)
+l. 117 Writing Limit.idv[31] (Limit30x.svg)
 
-Output written on Limit.dvi (5 pages, 22312 bytes).
+[5]
+l. 121 Writing Limit.idv[32] (Limit31x.svg)
+l. 122 Writing Limit.idv[33] (Limit32x.svg)
+ [6] (Limit.aux) ) 
+Here is how much of TeX's memory you used:
+ 5499 strings out of 493313
+ 65968 string characters out of 3138925
+ 256563 words of memory out of 3000000
+ 8880 multiletter control sequences out of 15000+200000
+ 7823 words of font info for 30 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,12n,32p,692b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Limit.dvi (6 pages, 27792 bytes).

@@ -25,6 +25,7 @@
 
 
 \begin{document}
+\section{Introduction}
 \begin{definition}
 	 We say that a function's limit exits at $x= x_0$,i.e 
 	 \[ \lim_{x\to x_0} f(x) = L \]
@@ -93,6 +94,37 @@ Notes: The limit of a function at some points $x_0$ has nothing to do with the f
 
 
 Note: When dealing with limit, if some situations occur(e.g 0/0), remember to simplify or adjust the expression before you further calculate.
+
+\section{One-sided limit}
+\begin{definition}
+	The \textbf{left(right) limit} of a function, $f(x)$, at $x=x_0$ is the value the function is approaching when x is approaching $x_0$ from the left(right).  The notations for them are
+	\begin{align}
+	&\lim_{x\to x_0^-}f(x), &\text{left limit}\\
+	&\lim_{x\to x_0^+}f(x), &\text{right limit}
+	\end{align}
+\end{definition}
+
+\begin{ex}
+	Let $f(x)= \frac{1}{x}$. Then the one-sided limits at $x=0$ are
+	\begin{align*}
+	&\lim_{x\to 0^-}f(x) = -\infty, &\text{left limit}\\
+	&\lim_{x\to 0^+}f(x)= -\infty, &\text{right limit}
+	\end{align*}
+\end{ex}
+
+
+\begin{thm}
+	$\lim_{x\to x_0} f(x)$ exists if and only if the left and right limit exist and equal, i.e. $\lim_{x\to x_0^-}f(x)=\lim_{x\to x_0^+}f(x)$.
+\end{thm}
+
+\begin{ex}
+	\[f(x) = \frac{(x+1)}{(x+1)x}\]
+	The limit of this function at $x=-1$ exists since both left and right limit exist and equal.
+	
+	\begin{center}
+		!!!!!!!!!!!!!!!!!!!!!!!desmos!!!!!!!!!!!!!!!!!!!!!!!!!
+	\end{center}
+\end{ex}
 
 
 \end{document}
