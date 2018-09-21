@@ -1,5 +1,7 @@
 htfcss: cmbxti  font-weight: bold; font-style: italic;
 htfcss: cmti  font-style: italic;
+htfcss: cmitt font-family: monospace; font-style: italic;
+htfcss: cmtt font-family: monospace;
 htfcss: cmbx  font-weight: bold;
 htfcss: cmbxsl  font-weight: bold; font-style: oblique;
 htfcss: cmmi font-style: italic;
@@ -39,7 +41,6 @@ Css: .overline img{ border-top: 1px solid black; }
 Css: td.displaylines {text-align:center; white-space:nowrap;}
 Css: .centerline {text-align:center;}
 Css: .rightline {text-align:right;}
-Css: div.pic-tabular {text-align:center;}
 Css: div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
 Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
 Css: div.fbox {display:table}
@@ -58,6 +59,9 @@ Css: .framebox-l {text-align:left;}
 Css: .framebox-r {text-align:right;}
 Css: span.thank-mark{ vertical-align: super }
 Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
 Css: td p:first-child{ margin-top:0em; }
 Css: td p:last-child{ margin-bottom:0em; }
 Css: div.td00{ margin-left:0pt; margin-right:0pt; }
@@ -132,20 +136,117 @@ Css: td.gather {text-align:center; }
 Css: table.gather {width:100%;}
 Css: div.gather-star {text-align:center;}
 Css: .figure img.graphics {margin-left:10%;}
+Css: #TBL-1 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-1{border-collapse:collapse;}
+Css: #TBL-1 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-1{border-collapse:collapse;}
+Css: #TBL-1 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-1{border-collapse:collapse;}
+Css: #TBL-1 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-1{border-collapse:collapse;}
 --- needs --- connectives.idv[2] ==> connectives0x.svg ---
 --- needs --- connectives.idv[3] ==> connectives1x.svg ---
 --- needs --- connectives.idv[4] ==> connectives2x.svg ---
 --- needs --- connectives.idv[5] ==> connectives3x.svg ---
 --- needs --- connectives.idv[6] ==> connectives4x.svg ---
 --- needs --- connectives.idv[7] ==> connectives5x.svg ---
+Css: #TBL-2 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-2{border-collapse:collapse;}
+Css: #TBL-2 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-2{border-collapse:collapse;}
+Css: #TBL-2 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-2{border-collapse:collapse;}
 --- needs --- connectives.idv[8] ==> connectives6x.svg ---
 --- needs --- connectives.idv[9] ==> connectives7x.svg ---
+Css: #TBL-3 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-3{border-collapse:collapse;}
+Css: #TBL-3 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-3{border-collapse:collapse;}
+Css: #TBL-3 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-3{border-collapse:collapse;}
+Css: #TBL-3 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-3{border-collapse:collapse;}
 --- needs --- connectives.idv[10] ==> connectives8x.svg ---
+--- needs --- connectives.idv[11] ==> connectives9x.svg ---
+--- needs --- connectives.idv[12] ==> connectives10x.svg ---
+Css: #TBL-4 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-4{border-collapse:collapse;}
+Css: #TBL-4 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-4{border-collapse:collapse;}
+Css: #TBL-4 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-4{border-collapse:collapse;}
+Css: #TBL-4 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-4{border-collapse:collapse;}
+--- needs --- connectives.idv[13] ==> connectives11x.svg ---
+--- needs --- connectives.idv[14] ==> connectives12x.svg ---
+--- needs --- connectives.idv[15] ==> connectives13x.svg ---
+Css: #TBL-5 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-5{border-collapse:collapse;}
+Css: #TBL-5 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-5{border-collapse:collapse;}
+Css: #TBL-5 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-5{border-collapse:collapse;}
+Css: #TBL-5 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-5{border-collapse:collapse;}
+--- needs --- connectives.idv[16] ==> connectives14x.svg ---
+--- needs --- connectives.idv[17] ==> connectives15x.svg ---
+--- needs --- connectives.idv[18] ==> connectives16x.svg ---
+Css: #TBL-6 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-6{border-collapse:collapse;}
+Css: #TBL-6 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-6{border-collapse:collapse;}
+Css: #TBL-6 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-6{border-collapse:collapse;}
+Css: #TBL-6 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-6{border-collapse:collapse;}
+--- needs --- connectives.idv[19] ==> connectives17x.svg ---
+--- needs --- connectives.idv[20] ==> connectives18x.svg ---
+--- needs --- connectives.idv[21] ==> connectives19x.svg ---
+Css: #TBL-7 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-7{border-collapse:collapse;}
+Css: #TBL-7 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-7{border-collapse:collapse;}
+Css: #TBL-7 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-7{border-collapse:collapse;}
+Css: #TBL-7 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-7{border-collapse:collapse;}
+--- needs --- connectives.idv[22] ==> connectives20x.svg ---
+--- needs --- connectives.idv[23] ==> connectives21x.svg ---
+--- needs --- connectives.idv[24] ==> connectives22x.svg ---
+Css: #TBL-8 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-8{border-collapse:collapse;}
+Css: #TBL-8 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-8{border-collapse:collapse;}
+Css: #TBL-8 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-8{border-collapse:collapse;}
+Css: #TBL-8 colgroup{border-left: 1px solid black;border-right:1px solid black;}
+Css: #TBL-8{border-collapse:collapse;}
+--- needs --- connectives.idv[25] ==> connectives23x.svg ---
+--- needs --- connectives.idv[26] ==> connectives24x.svg ---
+--- needs --- connectives.idv[27] ==> connectives25x.svg ---
+--- needs --- connectives.idv[28] ==> connectives26x.svg ---
+--- needs --- connectives.idv[29] ==> connectives27x.svg ---
+--- needs --- connectives.idv[30] ==> connectives28x.svg ---
+--- needs --- connectives.idv[31] ==> connectives29x.svg ---
+--- needs --- connectives.idv[32] ==> connectives30x.svg ---
+--- needs --- connectives.idv[33] ==> connectives31x.svg ---
+--- needs --- connectives.idv[34] ==> connectives32x.svg ---
+--- needs --- connectives.idv[35] ==> connectives33x.svg ---
+--- needs --- connectives.idv[36] ==> connectives34x.svg ---
+--- needs --- connectives.idv[37] ==> connectives35x.svg ---
+--- needs --- connectives.idv[38] ==> connectives36x.svg ---
+--- needs --- connectives.idv[39] ==> connectives37x.svg ---
+--- needs --- connectives.idv[40] ==> connectives38x.svg ---
+--- needs --- connectives.idv[41] ==> connectives39x.svg ---
+--- needs --- connectives.idv[42] ==> connectives40x.svg ---
+--- needs --- connectives.idv[43] ==> connectives41x.svg ---
+--- needs --- connectives.idv[44] ==> connectives42x.svg ---
+--- needs --- connectives.idv[45] ==> connectives43x.svg ---
 --- characters ---
 Font("cmr","10","10","100")
 Font("cmmi","10","10","100")
 Font("cmsy","10","10","100")
 Font("cmti","10","10","100")
 Font("cmbx","10","10","100")
-Font("msam","10","10","100")
+Font("cmitt","10","10","100")
 Font("cmbxti","10","10","100")

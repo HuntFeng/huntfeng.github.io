@@ -1,0 +1,98 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{definition}
+Tautology is a compound statement that is true for all circumstances. In other words, the truth value of a tautology is always True.
+\end{definition}
+
+\begin{ex}
+	The statement "I am either dead or alive" is a tautology. Since this statement is always true. Its expression can be written as 
+	\[ p\vee \neg p \]
+	where p=I am dead. The truth value table of this formula is as shown below
+	
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+		\hline 
+		$p$ & $\neg p$ & $p\vee \neg p$  \\ 
+		\hline 
+		0 & 1 & 1 \\ 
+		\hline 
+		1 & 0 & 1 \\ 
+		\hline 
+	\end{tabular}
+	\end{center} 
+\end{ex}
+
+\begin{definition}
+	An \textbf{argument} is a series of statements(\textbf{premises}) and ending with a \textbf{conclusion}.
+\end{definition}
+
+\begin{definition}
+	An argument \textbf{valid} if and only if when all the premises are true, the conclusion is necessarily true. In other words, an argument is valid if and only if it is equivalent to a tautology.
+	
+	An argument is not valid if and only if it is not equivalent to a tautology.    
+\end{definition}
+
+\begin{thm}
+	Logic inference rules
+	
+	\begin{center}
+		\includegraphics*[width=10cm]{inference_rule.PNG}
+	\end{center}
+	
+	\iffalse
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		Modus Ponens & Modus Tollens & Disjunctive Syllogism \\
+		$p\to q$ & $p\to q$ & $p\vee q$ \vline $p\vee q$ \\
+		$p$ 	 & $\neg q$ & $\neg q$  \vline $\neg p$\\
+		$\therefore q$ & $\therefore \neg p$ & $\therefore p $\vline $\therefore q$\\
+		\hline 
+		Addition & Simplification & Proof by contradiction \\
+		$p$ \vline $q$ & $p\wedge q$ \vline $p\wedge q$ & $\neg p\to F$\\
+		$\therefore p\vee q$\vline $\therefore p\vee q$ & $\therefore p$ \vline $\therefore q$ & $\therefore p$\\
+		\hline 
+		Hypothetical Syllogism & Conjunction & Proof by divided into two cases \\ 
+		$p\to q$ & $p$ & $p\vee q$\\
+		$q\to r$ & $q$ & $p\to r$\\
+		$\therefore p\to r$ & $\therefore p\wedge q$ &  $q\to r$\\
+		& & $\therefore r$ \\
+		\hline 
+		Resolution & & \\
+		$p\vee q$ & & \\
+		$\neg p \vee r$ & & \\
+		$\therefore q\vee r$  called \textbf{resolvent}& & \\
+		\hline
+	\end{tabular} 
+	\fi
+\end{thm}
+
+
+
+\end{document}
+

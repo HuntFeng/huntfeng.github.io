@@ -1,10 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.16)  17 SEP 2018 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  20 SEP 2018 22:48
 entering extended mode
-**./connectives.tex
-(connectives.tex
-LaTeX2e <2017-04-15>
-Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
+e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
+@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\doc
+umentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname te
+x4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HC
+ode}{\documentstyle[tex4ht]}}}\makeatother\HCode xhtml, svg,pic-m.a.b.c.\input 
+ connectives
+(connectives.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -21,6 +24,18 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\tex4ht.sty"
+version 2016-07-18-16:08
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\usepackage.4ht")
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
@@ -31,7 +46,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks14
+\@emptytoks=\toks15
 \ex@=\dimen103
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
@@ -61,21 +76,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \dotsspace@=\muskip10
 \c@parentequation=\count94
 \dspbrk@lvl=\count95
-\tag@help=\toks15
+\tag@help=\toks16
 \row@=\count96
 \column@=\count97
 \maxfields@=\count98
-\andhelp@=\toks16
+\andhelp@=\toks17
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
 \tagshift@=\dimen108
 \tagwidth@=\dimen109
 \totwidth@=\dimen110
 \lineht@=\dimen111
-\@envbody=\toks17
+\@envbody=\toks18
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks18
+\mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -91,22 +106,22 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks19
-\thm@bodyfont=\toks20
-\thm@headfont=\toks21
-\thm@notefont=\toks22
-\thm@headpunct=\toks23
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
 \thm@preskip=\skip46
 \thm@postskip=\skip47
 \thm@headsep=\skip48
-\dth@everypar=\toks24
+\dth@everypar=\toks25
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks25
+\KV@toks@=\toks26
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
@@ -117,10 +132,10 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: dvips.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\dvips.def"
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
@@ -132,6 +147,407 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 \c@lemma=\count103
 \c@prop=\count104
 
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\tex4ht.4ht"
+version 2017-05-09-09:21
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\tex4ht.sty"
+version 2016-07-18-16:08
+
+--- needs --- tex4ht connectives ---
+\tmp:cnt=\count105
+\openout15 = `connectives.tmp'.
+
+(connectives.tmp)
+\tmp:dim=\skip49
+ (connectives.xref)
+\:refout=\write3
+\openout3 = `connectives.xref'.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht")
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+--------------------------------------
+--- Note --- for alternative charset, use the command line option `charset=...'
+
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: xhtml,svg,pic-m,html
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+--------------------------------------
+--- Note --- for external SVG files try the command line options `svg-obj' and 
+'svg-'
+--------------------------------------
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"
+version 2016-03-31-11:13
+)
+\:tokwrite=\toks27
+\:tokpage=\toks28
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `connectives.4ct'.
+
+\:tocout=\write4
+\openout4 = `connectives.4tc'.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht")
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\latex.4ht"
+version 2017-01-24-15:21
+LaTeX Info: Redefining \_ on input line 168.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\fontmath.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\article.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\amsmath.4ht"
+version 2009-05-21-09:32
+\tmp:muskip=\muskip11
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\amstext.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\amsbsy.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\amsopn.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\amssymb.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\amsfonts.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\amsthm.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\graphicx.4ht"
+version 2015-08-05-15:37
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\graphics.4ht"
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\dvips.4ht"
+version 2009-05-21-09:32
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
+version 2017-05-09-09:20
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-math.4ht"
+version 2017-03-30-16:04
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
+version 2017-05-09-09:46
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht"))
 (connectives.aux)
 \openout1 = `connectives.aux'.
 
@@ -147,74 +563,9 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen114
-\scratchbox=\box28
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen115
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks27
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+--- file connectives.css ---
 LaTeX Font Info:    Try loading font information for U+msa on input line 35.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 35.
@@ -222,37 +573,62 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (36.64627pt too wide) in paragraph at lines 146--171
-[][] 
- []
+l. 37 Writing connectives.idv[1] (connectives0x.svg)
+l. 39 Writing connectives.idv[2] (connectives1x.svg)
+l. 41 Writing connectives.idv[3] (connectives2x.svg)
+l. 43 Writing connectives.idv[4] (connectives3x.svg)
+l. 45 Writing connectives.idv[5] (connectives4x.svg)
+l. 47 Writing connectives.idv[6] (connectives5x.svg)
+l. 54 Writing connectives.idv[7] (connectives6x.svg)
+l. 54 Writing connectives.idv[8] (connectives7x.svg)
+l. 64 Writing connectives.idv[9] (connectives8x.svg)
+l. 64 Writing connectives.idv[10] (connectives9x.svg)
+l. 64 Writing connectives.idv[11] (connectives10x.svg)
+l. 78 Writing connectives.idv[12] (connectives11x.svg)
+l. 78 Writing connectives.idv[13] (connectives12x.svg)
+l. 78 Writing connectives.idv[14] (connectives13x.svg)
+l. 92 Writing connectives.idv[15] (connectives14x.svg)
+l. 92 Writing connectives.idv[16] (connectives15x.svg)
+l. 92 Writing connectives.idv[17] (connectives16x.svg)
+l. 106 Writing connectives.idv[18] (connectives17x.svg)
+l. 106 Writing connectives.idv[19] (connectives18x.svg)
+l. 106 Writing connectives.idv[20] (connectives19x.svg)
+l. 120 Writing connectives.idv[21] (connectives20x.svg)
+l. 120 Writing connectives.idv[22] (connectives21x.svg)
+l. 120 Writing connectives.idv[23] (connectives22x.svg)
+ [1
 
-
-Overfull \hbox (11.80348pt too wide) in paragraph at lines 177--195
-[][] 
- []
-
-[1
-
-{C:/Users/space/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+]
+l. 148 Writing connectives.idv[24] (connectives23x.svg)
+l. 148 Writing connectives.idv[25] (connectives24x.svg)
+l. 150 Writing connectives.idv[26] (connectives25x.svg)
+l. 150 Writing connectives.idv[27] (connectives26x.svg)
+l. 152 Writing connectives.idv[28] (connectives27x.svg)
+l. 152 Writing connectives.idv[29] (connectives28x.svg)
+l. 154 Writing connectives.idv[30] (connectives29x.svg)
+l. 154 Writing connectives.idv[31] (connectives30x.svg)
+l. 156 Writing connectives.idv[32] (connectives31x.svg)
+l. 156 Writing connectives.idv[33] (connectives32x.svg)
+l. 158 Writing connectives.idv[34] (connectives33x.svg)
+l. 160 Writing connectives.idv[35] (connectives34x.svg)
+l. 160 Writing connectives.idv[36] (connectives35x.svg)
+l. 162 Writing connectives.idv[37] (connectives36x.svg)
+l. 162 Writing connectives.idv[38] (connectives37x.svg)
+l. 164 Writing connectives.idv[39] (connectives38x.svg)
+l. 164 Writing connectives.idv[40] (connectives39x.svg)
+l. 166 Writing connectives.idv[41] (connectives40x.svg)
+l. 166 Writing connectives.idv[42] (connectives41x.svg)
+l. 168 Writing connectives.idv[43] (connectives42x.svg)
+l. 168 Writing connectives.idv[44] (connectives43x.svg)
+ [2]
 (connectives.aux) ) 
 Here is how much of TeX's memory you used:
- 2411 strings out of 493312
- 31506 string characters out of 3138899
- 103039 words of memory out of 3000000
- 5939 multiletter control sequences out of 15000+200000
- 6352 words of font info for 25 fonts, out of 3000000 for 9000
+ 5593 strings out of 493313
+ 66924 string characters out of 3138925
+ 270515 words of memory out of 3000000
+ 8977 multiletter control sequences out of 15000+200000
+ 6520 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,26p,280b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on connectives.pdf (2 pages, 81760 bytes).
-PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 30i,9n,32p,676b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+Output written on connectives.dvi (2 pages, 59828 bytes).
