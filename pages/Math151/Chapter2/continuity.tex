@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{definition}
+	A function $f(x)$ is continuous at point $x=x_0$ if and only if the following conditions are satisfied: 
+	\begin{align}
+	&\lim_{x\to x_0^-} f(x),\; \lim_{x\to x_0^+} f(x),\;\text{and}\; f(x_0)\; \text{exist}.\\
+	&\lim_{x\to x_0^-} f(x)=\lim_{x\to x_0^+} f(x)=f(x_0)
+	\end{align}
+\end{definition}
+
+\begin{ex}
+	Show that $f(x)$ is continuous at $x=1$ if it is defined by
+	\[ f(x) = \left\{ \begin{matrix}
+	&x+1,\;&x<1 \\ &x^2+x,&x\geq 1 
+	\end{matrix} \right. \]
+	
+	\begin{proof}
+		We have to know what left/right limit and also the function value at $x=2$ are  
+		\begin{align*}
+		&\lim_{x\to 1^-} f(x) = \lim_{x\to 1^-} x+1 = 2\\
+		&\lim_{x\to 1^+} f(x) = \lim_{x\to 1^+} x^2+x = 2\\
+		&f(1) = 1^2 + 1 = 2\\
+		\end{align*}
+		 
+		We see that, they all exist, so condition (1) is satisfied. Moreover, since they are all equal, so condition (2) is also satisfied. Thus $f(x)$ is continuous at $x=1$.
+	\end{proof}
+\end{ex}
+
+
+\begin{ex}
+	Find a number $k$ such that the function 
+	\[ f(x) = \left\{ \begin{matrix}
+	&\sin(x+k), &x<0\\ &e^x, &x\geq 0
+	\end{matrix}  \right. \] 
+	is continuous at $x=0$.
+	
+	
+	\begin{proof}
+		In order to make this function continuous at $x=1$, we have to make it satisfies the two conditions.
+		
+		Since 
+		\begin{align*}
+		&\lim_{x\to 0^-} f(x) = \sin k\\
+		&\lim_{x\to 0^+} f(x) = e^0 = 1\\
+		&f(0) = e^0 = 1
+		\end{align*} 
+		
+		we see that we have to set $\sin k=1$. Thus $k=\frac{\pi}{2} + 2\pi n,\;n\in\mathbb{Z}$. 
+	\end{proof}
+\end{ex}
+
+
+
+\end{document}
+

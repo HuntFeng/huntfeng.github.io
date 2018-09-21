@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+There are three types of discontinuities.
+
+\section{Removable Discontinuity}
+\begin{definition}
+	A function $f(x)$ has a removable discontinuity at $x=x_0$ if
+	\[ \lim_{x\to x_0^-} f(x)  = \lim_{x\to x_0^+} f(x) \neq f(x_0) \]
+\end{definition}
+
+\begin{ex}
+	the rational function
+	\[ f(x) = \frac{x^2+2x+1}{x+1} \]
+	has a removable discontinuity at $x=-1$.
+	
+	Since at $x=-1$ this is a hole. So the left right limits exist and equal, but the function value is missing.
+	
+	\begin{center}
+		!!!!!!!!!!!!!!!!!!!!!! desmos graph !!!!!!!!!!!!!!!!!!!!!!!!!!
+	\end{center}
+\end{ex}
+
+
+\section{Jump Discontinuity}
+\begin{definition}
+	A function is said to have a jump discontinuity at $x=x_0$ if 
+	\[ \lim_{x\to x_0^-} f(x) \neq \lim_{x\to x_0^+} f(x) \]
+\end{definition}
+
+
+\begin{ex}
+	The piecewise function
+	\[ f(x) = \left\{ \begin{matrix}
+	&x,&x<0 \\ &\cos x, &x\geq 0
+	\end{matrix} \right. \] 
+	has a jump discontinuity at $x=0$. Since $\lim_{x\to 0^-}f(x) = \lim_{x\to 0^-} x = 0$, yet $\lim_{x\to 0^+} f(x) = \lim_{x\to 0^+} \cos x = 1$.
+	
+	
+	\begin{center}
+		!!!!!!!!!!!!!!!!!!!!!! desmos graph !!!!!!!!!!!!!!!!!!!!!!!!!!
+	\end{center}
+\end{ex}
+
+\section{Essential Discontinuity}
+\begin{definition}
+	A function has essential discontinuity at $x=x_0$ if one (both) of one-sided limits does(do) not exist or be infinity.  
+\end{definition}
+
+\begin{ex}
+	\[ f(x) = \sin\left(\frac{1}{x} \right) \]
+	
+	has an essential discontinuity at $x=0$, since both left and right limits at $x=0$ do not exist.
+	
+	\begin{center}
+		!!!!!!!!!!!!!!!!!!!!!! desmos graph !!!!!!!!!!!!!!!!!!!!!!!!!!
+	\end{center}
+\end{ex}
+
+\end{document}
+
