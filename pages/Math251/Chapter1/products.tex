@@ -1,0 +1,74 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem*{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{definition}
+	Dot product can be defined between two vectors. Suppose two vectors $\vec{u}=(u_x,u_y,u_z)$ and $\vec{v}=(v_x,v_y,v_z)$. Then
+	\[ \vec{u}\cdot\vec{v} = u_xv_x + u_yv_y + u_zv_z \]
+	or 
+	\[ \vec{u}\cdot\vec{v} = |\vec{u}||\vec{v}|\cos\theta \]
+	where $\theta$ is the acute angle between two vectors.
+\end{definition}
+
+\begin{property}
+	\begin{align}
+	&\vec{u}\cdot\vec{v} = \vec{v}\cdot\vec{u}\\
+	&\vec{u}\cdot\vec{v} = 0 \;(\text{if they are othorgonal})\\
+	&(\vec{u}\cdot\vec{v})\cdot\vec{w} = \vec{u}\cdot(\vec{v}\cdot\vec{w})\\
+	&\vec{u}\cdot(\vec{v}+\vec{w}) = \vec{u}\cdot\vec{v} + \vec{u}\cdot\vec{v}
+	\end{align}
+\end{property}
+
+Note: The result of dot product is a scalar.
+
+\begin{definition}
+	Cross product can be defined between two vectors. Suppose two vectors $\vec{u}=(u_x,u_y,u_z)$ and $\vec{v}=(v_x,v_y,v_z)$. Then
+	\[ \vec{u}\times\vec{v} = \begin{vmatrix}
+	\hat{i} & \hat{j} & \hat{k}\\ u_x&u_y&u_z\\ v_x&v_y&v_z
+	\end{vmatrix} \]
+	
+	or
+	
+	\[ |\vec{u}\times\vec{v}| = |\vec{u}||\vec{v}|\sin\theta \]
+	where $\theta$ is the acute angle between two vectors.
+\end{definition}
+
+\begin{property}
+	\begin{align}
+	&\vec{u}\times\vec{v} = -\vec{v}\times\vec{u}\\
+	&\vec{u}\times\vec{v} = 0\;\;(\text{if they are parallel})\\
+	&(\vec{u}\times\vec{v})\times\vec{w} = \vec{u}\times(\vec{v}\times\vec{w})\\
+	&\vec{u}\times(\vec{v} + \vec{w}) = \vec{u}\times\vec{v} + \vec{u}\times\vec{v}\\
+	\end{align}
+	
+\end{property}
+
+Note: The result of a cross product is a vector, its direction can be determined by right-hand rule.
+
+
+
+\end{document}
+
