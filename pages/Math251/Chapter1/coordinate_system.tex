@@ -1,0 +1,100 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+
+\section{Rectangular coordinate system}
+This is trivial, there are three coordinates, they are x, y and z, respectively. A vector in this coordinate with a tip at position (x,y,z) and tail at the origin is usually denoted by $(x,y,z)$ or $\langle x,y,z \rangle$ or 3 by 1 matrix $[x,y,z]^T$.
+
+the distance between two points $(x_1,y_1,z_1)$ and $(x_2,y_2,z_2)$ can be calculated by 
+\[  \sqrt{(x_1-x_2)^2+(y_1-y_2)^2+(z_1-z_2)^2} \]
+
+
+\section{Cylindrical coordinate system}
+\begin{center}
+	\includegraphics*[width=7cm]{cylindrical-coordinates.png}
+\end{center}
+
+In cylindrical coordinate, instead of using x, y and z as coordinates we express the vector in terms of the length of the vector $r$, azimuth angle $\phi$, and height $z$, i.e. $(r,\phi,z)$. The transformation is shown below:  
+\begin{align*}
+x &= r\cos\phi \\
+y &= r\sin\phi\\
+z &= z
+\end{align*}
+
+or 
+
+\begin{align*}
+r &= \sqrt{x^2+y^2},\; r\in[0,\infty)\\
+\phi &= \arctan(y/x),\; \phi\in[0,2\pi)\\
+z &= z
+\end{align*}
+
+\begin{ex}
+	A vector in rectangular has an expression $(1,1,1)$, then if we use cylindrical coordinate to express it, then
+	\begin{align*}
+	r &= \sqrt{1^2+1^2} = \sqrt{2}\\
+	\phi &= \arctan(1/1) = \frac{\pi}{4}\\
+	z &= 1
+	\end{align*}
+	
+	Thus the representation of this vector in cylindrical system is $(\sqrt{3},\frac{\pi}{4},1)$. 
+\end{ex}
+
+
+\section{Spherical coordinate system}
+\begin{center}
+	\includegraphics*[width=7cm]{spherical-coordinates.png}
+\end{center}
+The representation of a vector in spherical coordinate system is $(\rho,\theta,\phi)$. Where $\rho$ is the length of the vector, $\theta$ the polar angle, and $\phi$ the azimuth angle. The transformation between rectangular coordinate and spherical coordinate is given by
+\begin{align*}
+x &= \rho\sin\theta\cos\phi\\
+y &= \rho\sin\theta\sin\phi\\
+z &= \rho\cos\theta
+\end{align*}
+
+or 
+
+\begin{align*}
+\rho &= \sqrt{x^2+y^2+z^2},\;\rho\in[0,\infty)\\
+\theta &= \arccos(z/\rho)\\
+\phi &= \arctan(y/x) 
+\end{align*}
+
+
+\begin{ex}
+	A vector in spherical coordinate has a representation of $(4,\pi/3,0)$. Then its representation in rectangular coordinate will be given by
+	\begin{align*}
+	x &= 4\sin(\pi/3)\cos(0) = 2\sqrt{3}\\
+	y &= 4\sin(\pi/3)\sin(0) = 0\\
+	z &= 4\cos(\pi/3) = 2
+	\end{align*}
+	
+	Thus its representation in rectangular coordinate is $(2\sqrt{3},0,2)$.
+\end{ex}
+
+\end{document}
+
