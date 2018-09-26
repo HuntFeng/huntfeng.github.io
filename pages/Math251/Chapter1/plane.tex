@@ -1,0 +1,72 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+\newtheorem{problem}{Problem}
+
+\newtheorem{solution}{Solution}
+
+
+
+\begin{document}
+\begin{definition}
+	A general form of a plane is 
+	\[ Ax + By + Cz = D \]
+	It is a set of points that satisfy this equation.
+\end{definition}
+
+However, practically the general form is not as useful as the normal-point form.
+
+\begin{definition}
+	The \textbf{normal-point} form of a plane is defined by the normal vector $\vec{n} = (n_x,n_y,n_z)$ of the plane and a point $\vec{r}_0 = (x_0,y_0,z_0)$ the plane contains.
+	\[ \vec{n}\cdot(\vec{r}-\vec{r}_0) = 0 \]
+	or 
+	\[ n_x(x-x_0) + n_y(y-y_0) + n_z(z-z_0) = 0 \]
+	
+	\begin{center}
+		\includegraphics*[width=5cm]{plane.png}
+	\end{center}
+	
+\end{definition} 
+
+\begin{problem}
+	Determine the equation of the plane which contains the three points $\vec{P}=(1,-2,0),\vec{Q}=(3,1,4),\vec{R}=(0,-1,2)$. 
+\end{problem}
+\begin{solution}
+	First we need to find out the normal of this plane.
+	\begin{align*}
+	\vec{n} &= \overrightarrow{PQ}\times\overrightarrow{PR}\\ 
+	&= (\vec{Q}-\vec{P})\times(\vec{R}-\vec{P})\\
+	&= (2,3,4) \times (-1,1,2)\\
+	&= (2,-8,5)
+	\end{align*}
+	
+	Since the plane contains all these points, we choose one, say P, then the normal-point form equation of this plane is 
+	\[ 2(x-1)-8(y+2)+5(z-0)=0 \]
+	or written in general form
+	\[ 2x-8y+5z = 18 \] 
+\end{solution}
+
+
+\end{document}
+

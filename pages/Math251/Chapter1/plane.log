@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  26 SEP 2018 11:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  26 SEP 2018 12:55
 entering extended mode
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
 e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
@@ -6,8 +6,8 @@ e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
 umentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname te
 x4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HC
 ode}{\documentstyle[tex4ht]}}}\makeatother\HCode xhtml,svg,pic-m,pic-align.a.b.
-c.\input  products
-(products.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+c.\input  plane
+(plane.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -141,10 +141,13 @@ File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 \Gin@req@width=\dimen113
 )
 \c@definition=\count99
-\c@ex=\count100
-\c@thm=\count101
-\c@lemma=\count102
-\c@prop=\count103
+\c@property=\count100
+\c@ex=\count101
+\c@thm=\count102
+\c@lemma=\count103
+\c@prop=\count104
+\c@problem=\count105
+\c@solution=\count106
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\tex4ht.4ht"
 version 2017-05-09-09:21
@@ -158,15 +161,15 @@ version 2017-05-09-09:21
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\tex4ht.sty"
 version 2016-07-18-16:08
 
---- needs --- tex4ht products ---
-\tmp:cnt=\count104
-\openout15 = `products.tmp'.
+--- needs --- tex4ht plane ---
+\tmp:cnt=\count107
+\openout15 = `plane.tmp'.
 
-(products.tmp)
+(plane.tmp)
 \tmp:dim=\skip49
- (products.xref)
+ (plane.xref)
 \:refout=\write3
-\openout3 = `products.xref'.
+\openout3 = `plane.xref'.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
@@ -276,10 +279,10 @@ version 2016-03-31-11:13
 --- Note --- for linear crosslinks of pages, use the command line option `next'
 
 --------------------------------------
-\openout15 = `products.4ct'.
+\openout15 = `plane.4ct'.
 
 \:tocout=\write4
-\openout4 = `products.4tc'.
+\openout4 = `plane.4tc'.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4.4ht"
@@ -546,56 +549,57 @@ version 2017-03-30-16:04
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\svg.4ht"
 version 2017-05-09-09:46
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht")) (products.aux
-)
-\openout1 = `products.aux'.
+("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\html4-svg.4ht")) (plane.aux)
+\openout1 = `plane.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
---- file products.css ---
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+--- file plane.css ---
+l. 34 Writing plane.idv[1] (plane0x.svg)
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-l. 29 Writing products.idv[1] (products0x.svg)
-l. 29 Writing products.idv[2] (products1x.svg)
-l. 30 Writing products.idv[3] (products2x.svg)
-l. 32 Writing products.idv[4] (products3x.svg)
-l. 33 Writing products.idv[5] (products4x.svg)
-l. 37 Writing products.idv[6] (products5x.svg)
-l. 48 Writing products.idv[7] (products6x.svg)
-l. 48 Writing products.idv[8] (products7x.svg)
- [1
+l. 41 Writing plane.idv[2] (plane1x.svg)
+l. 41 Writing plane.idv[3] (plane2x.svg)
+l. 42 Writing plane.idv[4] (plane3x.svg)
+l. 44 Writing plane.idv[5] (plane4x.svg)
+
+l.47 --- TeX4ht warning --- File `"plane.xbb"' not found ---
+l.47 --- TeX4ht warning --- Cannot determine size of graphic in "plane.xbb" (no
+ BoundingBox) ---
+l. 47 --- needs --- plane.png ---
+[1
 
 ]
-l. 49 Writing products.idv[9] (products8x.svg)
-l. 55 Writing products.idv[10] (products9x.svg)
-l. 56 Writing products.idv[11] (products10x.svg)
-l. 60 Writing products.idv[12] (products11x.svg)
- [2]
-(products.aux) ) 
+l. 53 Writing plane.idv[6] (plane5x.svg)
+l. 57 Writing plane.idv[7] (plane6x.svg)
+l. 65 Writing plane.idv[8] (plane7x.svg)
+l. 67 Writing plane.idv[9] (plane8x.svg)
+ [2] (plane.aux) ) 
 Here is how much of TeX's memory you used:
- 5466 strings out of 493313
- 65619 string characters out of 3138925
- 257534 words of memory out of 3000000
- 8851 multiletter control sequences out of 15000+200000
- 6691 words of font info for 26 fonts, out of 3000000 for 9000
+ 5485 strings out of 493313
+ 65776 string characters out of 3138925
+ 254612 words of memory out of 3000000
+ 8868 multiletter control sequences out of 15000+200000
+ 6352 words of font info for 25 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,12n,32p,691b,371s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,17n,32p,681b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on products.dvi (2 pages, 17564 bytes).
+Output written on plane.dvi (2 pages, 16036 bytes).

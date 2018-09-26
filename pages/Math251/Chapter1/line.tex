@@ -1,0 +1,96 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+\newtheorem{problem}{Problem}
+
+\newtheorem*{solution}{Solution}
+
+
+
+\begin{document}
+
+There are three equivalent forms of equation that can define spatial line.
+\begin{definition}
+	The \textbf{vector form} of a line which goes through point $(x_0,y_0,z_0)$ and has direction $(a,b,c)$ can be defined as
+	\[ \vec{l} = (x_0,y_0,z_0) + (a,b,c)t,\;\;(t\in\mathbb{R}) \]
+\end{definition}
+
+
+\begin{definition}
+	The \textbf{parametric form} of a line which goes through point $(x_0,y_0,z_0)$ and has direction $(a,b,c)$ can be defined as
+	\[ \left\{\begin{matrix}
+	x=x_0 + at\\ y=y_0 + bt\\  z=z_0 + ct\\ 
+	\end{matrix}\right. ,\;\;t\in\mathbb{R}  \]	
+\end{definition}
+
+
+\begin{definition}
+	The \textbf{Cartesian form} of a line which goes through point $(x_0,y_0,z_0)$ and has direction $(a,b,c)$ can be defined as
+	\[ \frac{x-x_0}{a} = \frac{y-y_0}{b} = \frac{z-z_0}{c} \]
+\end{definition}
+
+And we can define a spatial line using planes.
+\begin{definition}
+	A line can also be defined as the intersection of two intersecting planes.
+	\[ \left\{ \begin{matrix}
+	Ax + By + Cz = 0\\ A'x + B'y + C'z = 0
+	\end{matrix}  \right. \]
+\end{definition}
+
+
+\begin{problem}
+	Consider the lines L1 and L2, with equations 
+	\begin{align*}
+	&L1: \frac{x}{2} = -y = \frac{z}{5}\\
+	&L2: \frac{x-1}{2} = -(y-1) = \frac{z-1}{5}
+	\end{align*}
+	
+	(a) Show that the lines are parallel.
+	
+	(b) Find the equation of the plane containing the two lines.
+	
+	(c) Find the distance between the two lines.
+\end{problem}
+\begin{solution}
+	(a) Both of their directions are $(2,-1,5)$, thus they are parallel.
+	
+	(b) In order to find a plane containing these two lines, we must find the normal vector of the plane(which is perpendicular to the direction of the lines). To do this, we take the cross product between the direction vector and the vector pointing from L1 to L2.
+	
+	\[ (2,-1,5) \times [(1,1,1)-(0,0,0)] = (-6,3,3) \]
+	
+	Since the plane contains all points of L1 and L2, thus the point $(0,0,0)$ must in the plane. Thus the equation of the plane is
+	 \[ -6x+3y+3z = 0 \]
+	 
+	 (c) To do this, we draw a vector $\vec{d}$ from L1 to L2 and it must be perpendicular to both lines (that means this vector must lie in the plane we found above). Thus $\vec{d}$ must be perpendicular to both $(2,-1,5)$ and $(-6,3,3)$.
+	 \[ (2,-1,5) \times (-6,3,3) = (-18,-36,0) \]
+	 We normalize this vector $\hat{d} = \frac{1}{\sqrt{5}}(-1,-2,0)$. 
+	 Finally, we randomly choose a vector $\vec{v}$ pointing from L1 to L2, and we dot product $\vec{v}$ and $\hat{d}$, and we can have the distance between two lines since $\vec{v}\cdot\hat{d} = |\vec{v}|\cos\theta$, where $\theta$ is the angle between $\vec{v}$ and $\hat{d}$.
+	 
+	 Let $\vec{v} = (1,1,1)-(0,0,0) = (1,1,1)$, then the distance between two lines is
+	 \[ |\vec{v}\cdot\hat{d}| = \frac{1}{\sqrt{5}}|(1,1,1)\cdot(-1,-2,0)| = \frac{3}{\sqrt{5}} \]
+\end{solution}
+
+
+\end{document}
+
