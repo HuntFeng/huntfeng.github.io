@@ -1,0 +1,74 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{definition}
+	\textbf{Predicate} is a statement that its truth value depends on one or more variables. The set of values that can assign to the variables are called the \textbf{domain}(or \textbf{universe}) of the variable.
+\end{definition}
+
+\begin{ex}
+	\begin{align}
+	&p(x)\equiv\text{x is odd}.\;\;x\in\mathbb{N}\\
+	&q(x,y)\equiv x<y\;\;x,y\in\mathbb{R}\\
+	&r(x,y,z)\equiv x+y=z\;\;x,y,z\in\mathbb{Z}
+	\end{align}
+	These are all predicates since their truth values are all depend on the variables.
+\end{ex}
+
+
+\begin{definition}
+	The universal quantifier, $\forall$, means: for all, every, any, etc...
+\end{definition}
+
+\begin{ex}
+	\begin{align}
+	&\forall x\in \mathbb{N}, \text{x is an integer}.\\
+	&\forall x\in \mathbb{R}, x^2+1 >0
+	\end{align}
+\end{ex}
+
+
+\begin{definition}
+	The existential quantifier, $\exists$, means: for some, there is, exists, at least one, etc...
+\end{definition}
+
+\begin{ex}
+	\begin{align}
+	&\exists x\in\mathbb{Z} \text{ such that x is even}\\
+	&\exists x\in\mathbb{N} \text{ such that } x>5
+	\end{align}
+\end{ex}
+
+\begin{property}
+	\begin{align*}
+	\neg (\forall x, p(x)) \Leftrightarrow \exists x\;s.t.\;\neg p(x)\\
+	\neg (\exists x\;s.t.\;p(x)) \Leftrightarrow \forall x, \neg p(x)
+	\end{align*}
+\end{property}
+
+
+\end{document}
+

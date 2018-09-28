@@ -18,6 +18,8 @@
 
 \newtheorem{thm}{Theorem}
 
+\newtheorem{cor}{Corollary}
+
 \newtheorem{lemma}{Lemma}
 
 \newtheorem{prop}{Proposition}
@@ -74,6 +76,30 @@
 	\end{proof}
 \end{ex}
 
+\begin{thm}
+	\textbf{Intermediate Value Theorem}.
+	
+	If a function $f(x)$ is continuous on [a,b], then for any $\xi\in f([a,b])$ , we can find a $a\leq c\leq b$ such that 
+	\[ f(x) = \xi  \]
+\end{thm}
+
+\begin{ex}
+	Since $f(x)=x^2$ is continuous on $[0,2]$, and $f([0,2])=[0,4]$. Since $\pi\in[0,4]$, thus we can find a $c\in[0,2]$ such that $f(c) = \pi$.
+\end{ex}
+
+\begin{cor}
+	If a function $f(x)$ is continuous on [a,b], and $f(a)f(b)<0$, then there must be at least one $c\in[a,b]$ such that $f(c)=0$.
+\end{cor}
+\begin{proof}
+	Since $f(a)f(b)<0$, it means one and only one of $f(a)$ and $f(b)$ is negative. Without loss of generality, we assume $f(a)<0<f(b)$. Then since $f(x)$ is continuous on [a,b], thus by intermediate value theorem, there must be at least one $c$ such that $f(c)=0$.
+\end{proof}
+
+\begin{ex}
+	Show that $x^20 + 3x^19 -1 = 0$ must have at least one solution in [0,1].
+	\begin{proof}
+		Since the function $f(x) = x^20 + 3x^19 -1$ is continuous on [0,1], and $f(0)f(1)=(-1)\times(3) <0$. Thus it must have one zero in [0,1].
+	\end{proof}
+\end{ex}
 
 
 \end{document}

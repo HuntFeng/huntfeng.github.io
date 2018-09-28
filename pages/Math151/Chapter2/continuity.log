@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  21 SEP 2018 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=latex 2018.7.19)  27 SEP 2018 10:53
 entering extended mode
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
 e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
 @addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\doc
 umentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname te
 x4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HC
-ode}{\documentstyle[tex4ht]}}}\makeatother\HCode xhtml, svg,pic-m,pic-align.a.b
-.c.\input  continuity
+ode}{\documentstyle[tex4ht]}}}\makeatother\HCode xhtml,svg,pic-m,pic-align.a.b.
+c.\input  continuity
 (continuity.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -144,8 +144,9 @@ File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 \c@property=\count100
 \c@ex=\count101
 \c@thm=\count102
-\c@lemma=\count103
-\c@prop=\count104
+\c@cor=\count103
+\c@lemma=\count104
+\c@prop=\count105
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\tex4ht\tex4ht.4ht"
 version 2017-05-09-09:21
@@ -160,7 +161,7 @@ version 2017-05-09-09:21
 version 2016-07-18-16:08
 
 --- needs --- tex4ht continuity ---
-\tmp:cnt=\count105
+\tmp:cnt=\count106
 \openout15 = `continuity.tmp'.
 
 (continuity.tmp)
@@ -551,58 +552,83 @@ version 2017-05-09-09:46
 (continuity.aux)
 \openout1 = `continuity.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 --- file continuity.css ---
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-l. 29 Writing continuity.idv[1] (continuity0x.svg)
-l. 29 Writing continuity.idv[2] (continuity1x.svg)
-l. 30 Writing continuity.idv[3] (continuity2x.svg)
-l. 37 Writing continuity.idv[4] (continuity3x.svg)
-l. 37 Writing continuity.idv[5] (continuity4x.svg)
-l. 38 Writing continuity.idv[6] (continuity5x.svg)
-l. 43 Writing continuity.idv[7] (continuity6x.svg)
-l. 44 Writing continuity.idv[8] (continuity7x.svg)
+l. 31 Writing continuity.idv[1] (continuity0x.svg)
+l. 31 Writing continuity.idv[2] (continuity1x.svg)
+l. 32 Writing continuity.idv[3] (continuity2x.svg)
+l. 39 Writing continuity.idv[4] (continuity3x.svg)
+l. 39 Writing continuity.idv[5] (continuity4x.svg)
+l. 40 Writing continuity.idv[6] (continuity5x.svg)
+l. 45 Writing continuity.idv[7] (continuity6x.svg)
+l. 46 Writing continuity.idv[8] (continuity7x.svg)
  [1
 
 ]
-l. 50 Writing continuity.idv[9] (continuity8x.svg)
-l. 50 Writing continuity.idv[10] (continuity9x.svg)
-l. 56 Writing continuity.idv[11] (continuity10x.svg)
-l. 57 Writing continuity.idv[12] (continuity11x.svg)
-l. 60 Writing continuity.idv[13] (continuity12x.svg)
-l. 64 Writing continuity.idv[14] (continuity13x.svg)
-l. 67 Writing continuity.idv[15] (continuity14x.svg)
+l. 52 Writing continuity.idv[9] (continuity8x.svg)
+l. 52 Writing continuity.idv[10] (continuity9x.svg)
+l. 58 Writing continuity.idv[11] (continuity10x.svg)
+l. 59 Writing continuity.idv[12] (continuity11x.svg)
+l. 62 Writing continuity.idv[13] (continuity12x.svg)
+l. 66 Writing continuity.idv[14] (continuity13x.svg)
+l. 69 Writing continuity.idv[15] (continuity14x.svg)
  [2]
-l. 73 Writing continuity.idv[16] (continuity15x.svg)
-l. 73 Writing continuity.idv[17] (continuity16x.svg)
+l. 75 Writing continuity.idv[16] (continuity15x.svg)
+l. 75 Writing continuity.idv[17] (continuity16x.svg)
+l. 82 Writing continuity.idv[18] (continuity17x.svg)
+l. 82 Writing continuity.idv[19] (continuity18x.svg)
+l. 82 Writing continuity.idv[20] (continuity19x.svg)
+l. 83 Writing continuity.idv[21] (continuity20x.svg)
+l. 87 Writing continuity.idv[22] (continuity21x.svg)
+l. 87 Writing continuity.idv[23] (continuity22x.svg)
+l. 87 Writing continuity.idv[24] (continuity23x.svg)
+l. 87 Writing continuity.idv[25] (continuity24x.svg)
+l. 87 Writing continuity.idv[26] (continuity25x.svg)
+l. 87 Writing continuity.idv[27] (continuity26x.svg)
+l. 91 Writing continuity.idv[28] (continuity27x.svg)
+l. 91 Writing continuity.idv[29] (continuity28x.svg)
+l. 91 Writing continuity.idv[30] (continuity29x.svg)
+l. 91 Writing continuity.idv[31] (continuity30x.svg)
  [3]
+l. 94 Writing continuity.idv[32] (continuity31x.svg)
+l. 94 Writing continuity.idv[33] (continuity32x.svg)
+l. 94 Writing continuity.idv[34] (continuity33x.svg)
+l. 94 Writing continuity.idv[35] (continuity34x.svg)
+l. 94 Writing continuity.idv[36] (continuity35x.svg)
+l. 94 Writing continuity.idv[37] (continuity36x.svg)
+l. 94 Writing continuity.idv[38] (continuity37x.svg)
+l. 98 Writing continuity.idv[39] (continuity38x.svg)
+l. 100 Writing continuity.idv[40] (continuity39x.svg)
+l. 100 Writing continuity.idv[41] (continuity40x.svg)
+ [4]
 (continuity.aux) ) 
 Here is how much of TeX's memory you used:
- 5471 strings out of 493313
- 65668 string characters out of 3138925
- 256555 words of memory out of 3000000
- 8856 multiletter control sequences out of 15000+200000
- 6691 words of font info for 26 fonts, out of 3000000 for 9000
+ 5491 strings out of 493313
+ 65856 string characters out of 3138925
+ 256600 words of memory out of 3000000
+ 8875 multiletter control sequences out of 15000+200000
+ 7050 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,12n,32p,685b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,12n,32p,775b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on continuity.dvi (3 pages, 18288 bytes).
+Output written on continuity.dvi (4 pages, 26308 bytes).

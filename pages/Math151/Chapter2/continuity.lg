@@ -1,6 +1,7 @@
+htfcss: cmbxti  font-weight: bold; font-style: italic;
+htfcss: cmti  font-style: italic;
 htfcss: cmbx  font-weight: bold;
 htfcss: cmbxsl  font-weight: bold; font-style: oblique;
-htfcss: cmti  font-style: italic;
 htfcss: cmmi font-style: italic;
 htfcss: cmmib font-style: italic; font-weight: bold;
 File: continuity.html
@@ -149,6 +150,30 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- continuity.idv[16] ==> continuity14x.svg ---
 --- needs --- continuity.idv[17] ==> continuity15x.svg ---
 --- needs --- continuity.idv[18] ==> continuity16x.svg ---
+--- needs --- continuity.idv[19] ==> continuity17x.svg ---
+--- needs --- continuity.idv[20] ==> continuity18x.svg ---
+--- needs --- continuity.idv[21] ==> continuity19x.svg ---
+--- needs --- continuity.idv[22] ==> continuity20x.svg ---
+--- needs --- continuity.idv[23] ==> continuity21x.svg ---
+--- needs --- continuity.idv[24] ==> continuity22x.svg ---
+--- needs --- continuity.idv[25] ==> continuity23x.svg ---
+--- needs --- continuity.idv[26] ==> continuity24x.svg ---
+--- needs --- continuity.idv[27] ==> continuity25x.svg ---
+--- needs --- continuity.idv[28] ==> continuity26x.svg ---
+--- needs --- continuity.idv[29] ==> continuity27x.svg ---
+--- needs --- continuity.idv[30] ==> continuity28x.svg ---
+--- needs --- continuity.idv[31] ==> continuity29x.svg ---
+--- needs --- continuity.idv[32] ==> continuity30x.svg ---
+--- needs --- continuity.idv[33] ==> continuity31x.svg ---
+--- needs --- continuity.idv[34] ==> continuity32x.svg ---
+--- needs --- continuity.idv[35] ==> continuity33x.svg ---
+--- needs --- continuity.idv[36] ==> continuity34x.svg ---
+--- needs --- continuity.idv[37] ==> continuity35x.svg ---
+--- needs --- continuity.idv[38] ==> continuity36x.svg ---
+--- needs --- continuity.idv[39] ==> continuity37x.svg ---
+--- needs --- continuity.idv[40] ==> continuity38x.svg ---
+--- needs --- continuity.idv[41] ==> continuity39x.svg ---
+--- needs --- continuity.idv[42] ==> continuity40x.svg ---
 --- characters ---
 Font("cmex","10","10","100")
 Font("cmr","5","5","100")
@@ -162,3 +187,4 @@ Font("cmsy","10","10","100")
 Font("cmti","10","10","100")
 Font("cmbx","10","10","100")
 Font("msbm","10","10","100")
+Font("cmbxti","10","10","100")

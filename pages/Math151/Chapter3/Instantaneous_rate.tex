@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\section{Instantaneous Rate of Change}
+\begin{definition}
+	\textbf{Instantaneous rate of change} of a function $f(x)$ at $x=x_0$ is defined by
+	\[ \lim_{\Delta x\to0} \frac{\Delta y}{\Delta x} = \lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}\]
+	or
+	\[  \lim_{\Delta x\to0} \frac{\Delta y}{\Delta x} =\lim_{h\to0}\frac{f(x_0+h)-f(x_0)}{h} \]
+\end{definition}
+
+\begin{ex}
+	Suppose a car is in motion, and its position can be described by the function $x(t)= 5t + 1$ (t in second and x in meter), then the instantaneous rate of change(in this case, instantaneous velocity) at $t=3$ can be calculated by 
+	\[  \lim_{\Delta t\to0} \frac{\Delta x}{\Delta t}
+	=\lim_{t\to 3}\frac{f(t)-f(3)}{t-3} 
+	= \lim_{t\to 3}\frac{(5t+1) - (16)}{t-3} 
+	= \lim_{t\to 3}\frac{5t-15}{t-3}
+	= 5 \]
+	
+	That means the instantaneous velocity at $t=3s$ is 5m/s.   
+\end{ex}
+
+\begin{ex}
+	Let $f(x) = x^2 + 1$, show that the instantaneous rate of change at point $x=x_0$ is $2x_0$.
+	
+	\begin{proof}
+		\begin{align*}
+		\lim_{h\to 0}\frac{\Delta y}{\Delta x} 
+		&= \lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}\\
+		&= \lim_{h\to 0}\frac{[(x_0+h)^2+1]-(x_0^2+1)}{h}\\
+		&= \lim_{h\to 0}\frac{x_0^2+2x_0h+h^2 -x_0^2}{h}\\
+		&= \lim_{h\to 0} 2x_0 + h\\
+		&= 2x_0
+		\end{align*}
+	\end{proof}
+\end{ex}
+
+\section{Geometrical Interpretation}
+The instantaneous rate of change of a function $f(x)$ at a point $x=a$ is the slope of the tangent line at the point $(a,f(a))$.
+\begin{center}
+	\includegraphics*[width=10cm]{tangent_line.jpg}
+\end{center} 
+
+\begin{ex}
+	Show that the slope of the tangent line of the function $f(x) = \sqrt{x}$ at the point $x=4$ is 1/4.
+	\begin{proof}
+		\begin{align*}
+		\lim_{h\to 0}\frac{\Delta y}{\Delta x} 
+		&= \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\\
+		&= \lim_{h\to 0}\frac{\sqrt{x+h}-\sqrt{x}}{h}\\
+		&= \lim_{h\to 0}\frac{(x+h)-(x)}{h(\sqrt{x+h}+\sqrt{x})}\\
+		&= \lim_{h\to 0}\frac{1}{\sqrt{x+h}+\sqrt{x}}\\
+		&= \frac{1}{2\sqrt{x}}
+		\end{align*}
+		Thus when $x=4$, the instantaneous rate of change is $\frac{1}{2\sqrt{4}}=\frac{1}{4}$ 
+	\end{proof}
+\end{ex}
+
+
+\end{document}
+
