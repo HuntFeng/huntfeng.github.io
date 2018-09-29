@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{definition}
+	\textbf{Antiderivative} or \textbf{Indefinite integral} is the reverse operation of derivative. Suppose a function $F(x)$ has derivative $f(x)$, then the antiderivative of $f(x)$ is 
+	\[ \int f(x) dx = F(x) + C \] 
+	Where $C\in\mathbb{R}$ is a constant.  
+\end{definition}
+
+\begin{property}
+	\begin{align}
+	\int [f(x)\pm g(x)]dx = \int f(x) dx \pm \int g(x) dx\\
+	\int kf(x) dx = k\int f(x) dx\;\; (k\in\mathbb{R})\\
+	\end{align}
+\end{property}
+
+
+Since the antiderivative is just the reverse operation of derivative, thus we have a set of formulas
+\begin{center}
+	\includegraphics*[width=10cm]{rules.jpg}
+\end{center}
+
+
+
+\begin{ex}
+	Find the antiderivative of $f(x)= x^3 + \frac{\cos x}{2}$
+	\begin{align*}
+	\int [x^3 + \frac{\cos x}{2}]dx &= \int x^3 dx + \frac{1}{2}\int \cos x dx\\
+	&= \frac{x^4}{4} + \sin x +C
+	\end{align*}
+\end{ex}
+
+
+
+\end{document}
+

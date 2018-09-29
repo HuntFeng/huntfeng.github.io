@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\begin{thm}
+	\textbf{u-substitution} is the reverse application of the chain. Suppose $F'(x) = f(x)$ and then the derivative of a composite function can be calculated by chain rules
+	\[ \frac{d}{dx}F(u(x)) = f(u(x))u'(x) \]
+	Thus if $f(u(x))u'(x)$ is going to be integrated, then
+	\[ \int f(u(x))u'(x) dx = \int \frac{d}{dx}F(u(x)) dx = F(u(x)) +C \]
+\end{thm}
+
+\begin{ex}
+	Find the indefinite integral of $f(x) = \cos 2x$.
+	\[ \int \cos2x dx \]
+	Let $u=2x$, then $du = 2dx$. Thus
+	\[ \int \cos2x dx = \int \cos u \frac{du}{2} = \frac{1}{2}\sin u +C= \frac{1}{2}\sin 2x +C\]
+\end{ex}
+
+\begin{ex}
+	Find the integral of $f(x) = x^2(x^3-2)^3$.
+	\[ \int x^2(x^3-2)^3  \]
+	Let $u = x^3-2$, then $du = 3x^2dx$. Hence
+	\[ \int x^2(x^3-2)^3 = \int x^2(u)^3 \frac{du}{3x^2} = \int u^3 du = \frac{1}{4}u^4 + C   = \frac{1}{4}(x^3-2)^4 +C \]
+\end{ex}
+
+\end{document}
+
