@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+\section{Partial derivative}
+\begin{definition}
+	The partial derivative of function $f(x,y)$ with respect to x is defined by 
+	\[ \frac{\partial f}{\partial x}(x,y) = \lim_{h\to 0} \frac{f(x+h,y)-f(x,y)}{h} \]
+	
+	Similarly, the partial derivative of f with respect to y is defined by
+	\[ \frac{\partial f}{\partial y}(x,y) = \lim_{h\to 0} \frac{f(x,y+h)-f(x,y)}{h} \]
+\end{definition}
+
+Note that there are many notations for partial derivative. For example, the following notations are all meaning the same thing
+\[ \frac{\partial f}{\partial x} \equiv \partial_x f \equiv f_x \]
+
+\begin{ex}
+	Let $f(x,y) = x\cos 2y$. Then 
+	\[ \partial_x f = \cos 2y\;\;\partial_y f = -2x\sin 2y \]
+\end{ex}
+
+\begin{prop}
+	The geometrical meaning of partial derivatives is the instantaneous rate of change of the multi-variable function f in each directions.
+	
+	For example $f_x$ means the instantaneous rate of change in x-direction; $f_y$ is the instantaneous rate of change in y-direction.
+	\begin{center}
+		\includegraphics*{partial_derivative.png}
+	\end{center}  
+\end{prop}
+
+\section{Higher order derivative}
+We can easily define higher order partial derivatives. They are just partial derivative of the previous partial derivatives. The notation should not be confused
+\[ \frac{\partial }{\partial y}\left( \frac{\partial f}{\partial x}\right) \equiv \frac{\partial^2 f}{\partial y\partial x} \equiv \partial_y\partial_{x} f \equiv f_{xy} \]
+
+
+And there is a nice result we have to remember.
+\begin{thm}
+	\textbf{Clairaut's theorem}.\\
+	Suppose a two variable function $f(x,y)$ is defined on some open set U in $\mathbb{R}^2$, and both second-order mixed partial derivatives $f_{xy}(x,y)$ and $f_{yx}(x,y)$ exist and continuous on U, then
+	\[ f_{xy}(x,y) = f_{yx}(x,y)\;\;on\;U \]
+\end{thm}
+Note: This theorem can be generalized to n-variable real-valued functions $f(x_1,x_2,\cdots,x_n)$. any second-order mixed derivative has this property. In other words,
+\[ \partial_{x_i}\partial_{x_j} f = \partial_{x_j}\partial_{x_i} f \]  
+
+
+
+\end{document}
+

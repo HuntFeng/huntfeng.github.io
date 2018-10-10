@@ -1,0 +1,86 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+\newtheorem*{solution}{Solution}
+
+
+
+\begin{document}
+\section{Total Differentiation and Approximation}
+\begin{definition}
+	The \textbf{total derivative} of a function $f(x,y)$ at point $(x_0,y_0)$ is given by
+	\[ df = \partial_x f(x_0,y_0) dx + \partial_y f(x_0,y_0) dy \]
+	
+	In general, for functions of n variables $f(\vec{x})$ where $\vec{x}=(x_1,x_2,\cdots,x_n)$, the total differential at point $\vec{x}_0$
+	\[ df = \sum_{i=1}^n \partial_{x_i} f(\vec{x}_0) dx_i \]
+\end{definition}
+
+Note: Just think of this total derivative is just like the differentiation in first year calculus.
+
+\begin{ex}
+	Find the Total change of the area of a rectangle with length 10m and width 20m if the change in length is 0.5m and the change in width is 0.1m.
+	\begin{solution}
+		Let the area of the rectangle be $A(l,w) = lw$.
+		\begin{align*}
+		\Delta A &\approx \partial_l A\Delta l + \partial_w A \Delta w\\
+		&= w\Delta l + l\Delta w\\
+		&= 20\times 0.5 + 10\times 0.1\\
+		&= 11 m^2 
+		\end{align*}  
+	\end{solution}  
+\end{ex}
+
+\section{Tangent Plane}
+\begin{prop}
+	Whenever there is a surface $z=f(x,y)$, the tangent plane that at point $(x_0,y_0,z_0)$ can be given by
+\[ (z-z_0) = \partial_xf(x_0,y_0)(x-x_0) + \partial_yf(x_0,y_0)(y-y_0) \]
+The normal vector of this plane is $(\partial_xf(x_0,y_0),\partial_yf(x_0,y_0),-1)$.
+\end{prop}
+
+It is easy to see that why this is true. As $(x,y)\to (x_0,y_0)$, the entire equation above comes back to its origin, total differential of the function at point $(x_0,y_0)$.
+\[ dz =  \partial_xf(x_0,y_0)dx+ \partial_yf(x_0,y_0)dx \] 
+
+
+\begin{ex}
+	Find the tangent plane of the sphere $x^2+y^2+z^2=1$ at point (0,0,1).
+	\begin{solution}
+		First we convert the surface equation to the form $z=f(x,y)$. Since we only care about the north pole (0,0,1), so we just need to take the upper sphere
+		\[ z= \sqrt{1-x^2-y^2} \]
+		
+		Thus the tangent plane at (0,0,1) would be
+		\begin{align*}
+		(z-z_0) &= \partial_xf(x_0,y_0)(x-x_0) + \partial_yf(x_0,y_0)(y-y_0)\\
+		z-1 &= \left.\frac{-x}{\sqrt{1-x^2-y^2}}\right|_{(0,0)} (x-0) 
+		+\left.\frac{-y}{\sqrt{1-x^2-y^2}}\right|_{(0,0)}  (y-0)\\
+		z-1 &= 0 
+		\end{align*}
+		
+		Thus tangent plane is just simply $z=1$. Easy to verify this. 
+	\end{solution}
+\end{ex}
+
+
+
+\end{document}
+

@@ -1,0 +1,83 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+
+
+\newtheorem{definition}{Definition}
+
+\newtheorem{property}{Property}
+
+\newtheorem{ex}{Example}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{prop}{Proposition}
+
+
+
+\begin{document}
+
+\begin{definition}
+	Suppose a multi-variable function $f:\mathbb{R}^2\to\mathbb{R}$, then if the limit of a function $f(\vec{x})$ at point $\vec{x}_0$ is $L$, it can be denoted by
+	\[ \lim_{\vec{x}\to\vec{x}_0} f(\vec{x}) = L \] 
+\end{definition}
+
+\begin{thm}
+	$\lim_{\vec{x}\to\vec{x}_0} f(\vec{x}) = L $ if and only if no matter which path $\vec{x}$ is chosen to approach $\vec{x}_0$, the limit is $L$.
+\end{thm}
+
+\begin{ex}
+	\[ \lim_{(x,y)\to (0,0)} xy + e^x = 1 \]
+	When the function is continuous at that point, we can easily compute the limit by calculating the function value at that point.
+\end{ex}
+
+\begin{ex}
+	\[ \lim_{(x,y)\to(0,0)} \frac{xy}{x^2+y^2}\text{ does not exist} \]
+	\begin{proof}
+		We will show it by using polar coordinate system.\\
+		Let $x=r\cos\theta$, $y=r\sin\theta$. Then
+		\begin{align*}
+		\lim_{(x,y)\to(0,0)} \frac{xy}{x^2+y^2} 
+		&= \lim_{r\to 0} \frac{r^2\cos\theta\sin\theta}{r^2}\\
+		&= \lim_{r\to 0} \cos\theta\sin\theta\\
+		\end{align*}
+		
+		The result depends on the choice of angle (path dependent). Thus the limit at point (0,0) does not exist. 
+	\end{proof}
+\end{ex}
+
+\begin{ex}
+	\[ \lim_{(x,y)\to(0,0)} \frac{xy^2}{x^2+y^4}\text{ does not exist} \]
+	\begin{proof}
+		Using polar coordinate will be somewhat troublesome, we will use the rectangular coordinate instead.
+		
+		When (x,y) approaches (0,0) by the path $y=mx$.
+		\begin{align*}
+		\lim_{(x,y)\to(0,0)} \frac{xy^2}{x^2+y^4}
+		&= \lim_{x\to 0} \frac{x^3m^2}{x^2+m^4x^4}\\
+		&= \lim_{x\to 0} \frac{xm^2}{1+m^4x^2}\\
+		&= 0
+		\end{align*}
+		
+		When (x,y) approaches (0,0) by the path $x=y^2$.
+		\begin{align*}
+		\lim_{(x,y)\to(0,0)} \frac{xy^2}{x^2+y^4}
+		&= \lim_{y\to 0} \frac{y^4}{y^4+y^4}\\
+		&= \frac{1}{2}
+		\end{align*}
+		
+		The function has different limit when approaching the same point with different paths, thus the limit at (0,0) does not exist.
+	\end{proof}
+\end{ex}
+
+\end{document}
+
