@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}    
+    
+\newtheorem{definition}{Definition}
+\newtheorem{property}{Property} 
+\newtheorem{ex}{Example}
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{prop}{Proposition}  
+\newtheorem*{solution}{Solution}
+    
+
+\begin{document}
+Sometimes, a the dependent variable y cannot easily written explicitly as a function of x. Therefore it is important that we can still find out the derivative of the variable y with respect to x. To do this, we use the chain rule.
+
+
+\begin{ex}
+    Find the slope of the tangent line of the graph
+    \[ x^2+y^2 = 1 \]
+
+    \begin{solution}
+    We take the derivative of the equation with respect to x for both sides, we have
+    \begin{align*}
+        \frac{d}{dx} (x^2+y^2) = \frac{d}{dx}0\\
+        2x + 2yy' = 0\\
+        y' = -\frac{x}{y}
+    \end{align*}
+
+    The reason why the derivative of the second term is 2yy' is because we assume that y is a function of x, therefore $y^2$ is a composite function which the "outer function" is square and the "inner function" is $y(x)$.  
+    \end{solution}
+\end{ex}
+
+\end{document}
