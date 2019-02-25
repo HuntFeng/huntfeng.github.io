@@ -1,3 +1,11 @@
 {
-    "terminal.integrated.shell.linux": "C:\\Program Files\\Git\\git-cmd.exe"
+    "terminal.integrated.shell.linux": "C:\\Program Files\\Git\\git-cmd.exe",
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
 }
