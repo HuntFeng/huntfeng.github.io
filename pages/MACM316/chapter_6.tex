@@ -1,0 +1,263 @@
+\chapter{Approximating Eigenvalues}
+\section{Matrix Decomposition}
+\subsection{QR factorization}
+\begin{definition}
+	An $n\times m$ matrix $Q$ is called orthogonal if $Q =[\mathbf{q}_1, \mathbf{q}_2,\cdots \mathbf{q}_m]$ and $\mathbf{q}_i\cdot\mathbf{q}_j = \delta_{ij}$, where $\mathbf{q}_i\in\mathbb{R}^n$ and $\delta_{ij}$ is Kronecker delta.
+\end{definition}
+
+\begin{property}
+	Here are some useful properties of orthogonal matrix.
+	\begin{enumerate}
+		\item $Q^{-1} = Q^T$.
+		\item $\forall \mathbf{x},\mathbf{y}\in\mathbb{R}^n$, $(Q\mathbf{x})^T(Q\mathbf{y}) = \mathbf{x}^T\mathbf{y}$
+		\item $\forall \mathbf{x}\in\mathbb{R}^n$, $\| Q\mathbf{x} \| = \|\mathbf{x}\|$.
+	\end{enumerate}
+\end{property}
+\begin{thm} [QR factorization]
+	A square matrix $A$ can be decomposed into an orthogonal matrix $Q$, and an upper triangular $R$. That is 
+	\[ A = QR \]
+	This is so called QR factorization.
+	
+	The construction of Q describes as followed:
+	Suppose $A = [\mathbf{a}_1, \mathbf{a}_2, \cdots, \mathbf{a}_n]$. Then by employing the Gram-Schmidt process, we can orthonormalize the column vectors $\mathbf{a}_i$. Let's called those orthonormal basis $\mathbf{\hat{e}}_i$, then
+	
+	\[ Q = [\mathbf{\hat{e}}_1, \mathbf{\hat{e}}_2, \cdots, \mathbf{\hat{e}}_n] \]
+	and by the property 3 of orthogonal matrix, we can find the upper triangular $R$ by
+	\[ R = Q^{-1}A = Q^TA \]
+\end{thm}
+Worth to mention that QR factorization is often used to solve the least square problem.
+
+
+\subsection{Singular Value Decomposition}
+\begin{definition}
+	Let A be an $m\times n$ matrix.
+	\begin{enumerate}
+		\item 
+		The \textbf{Rank} of A, denoted $Rank(A)$, is the number of linearly independent rows in A.
+		\item 
+		The \textbf{Nullity} of A, denoted $Nullity(A)$, is $n - Rank(A)$ and describes the largest set of linearly independent vectors $\mathbf{v}$ in $\mathbb{R^n}$ for which $A\mathbf{v} = \mathbf{0}$.
+	\end{enumerate}
+\end{definition}
+
+\begin{thm}
+	The number of linearly independent rows of an $m \times n$ matrix A is the same as the number of linearly independent columns of A.
+\end{thm}
+
+\begin{thm}
+	Let A be an $m\times n$ matrix.
+	\begin{enumerate}
+		\item The matrices $A^TA$ and $AA^T$ are symmetric.
+		\item $Nullity(A) = Nullity(A^TA)$.
+		\item $Rank(A) = Rank(A^TA)$.
+		\item The eigenvalues of $A^TA$ are real and nonnegative.
+		\item The nonzero eigenvalues of $AA^T$ are the same as the nonzero eigenvalues of $A^TA$.
+	\end{enumerate}
+\end{thm}
+\begin{proof}
+	see textbook 625.
+\end{proof}
+
+\begin{definition}
+	The \textbf{singular values} of an $m \times n$ matrix A are the positive square roots of the nonzero eigenvalues of the $n \times n$ symmetric matrix $A^TA$.
+\end{definition}
+\begin{ex}
+	Determine the singular values of the $5 \times 3$ matrix
+	\[ A = \begin{bmatrix}
+	1&0&1\\ 0&1&0\\ 0&1&1\\ 0&1&0\\ 1&1&0
+	\end{bmatrix} \]
+	\begin{solution}
+		We have
+		\[ A^T = \begin{bmatrix}
+		1&0&0&0&1\\ 0&1&1&1&1\\ 1&0&1&0&0
+		\end{bmatrix},\;\; \text{so}\;\; 
+		A^TA = \begin{bmatrix}
+		2&1&1\\ 1&4&1\\ 1&1&2
+		\end{bmatrix} \]
+		
+		The characteristics equation of $A^TA$ is
+		\[ \rho(A^TA) = \lambda^3 - 8\lambda^2 + 17\lambda - 10 = (\lambda - 5)(\lambda - 2)(\lambda - 1) \]
+		
+		Thus the singular values are $s_1 = \sqrt{5}$, $s_2 = \sqrt{2}$ and $s_3=\sqrt{1}$. 
+	\end{solution}
+\end{ex}
+\begin{thm}
+	Let A be an $m\times n$ matrix. Then A can be decomposed as
+	\[ A = USV^T \]
+	where $U$ is an $m\times m$ orthogonal matrix, $V$ is $n\times n$ orthogonal matrix, and $S$ is an $m\times n$ diagonal matrix; that is, its only nonzero entries are $S_{ii} \equiv s_i \geq 0,\forall i = 1,\cdots , n$. 
+\end{thm}
+\subsubsection*{Construction of S}
+The diagonal elements of $S$ is the singular values of $A$ from largest to smallest. That is $S_{ii} = s_i, \forall i=1,2,\cdots, n$, and
+\[s_1 \geq s_2 \geq \cdots s_k > s_{k+1} = \cdots = s_n = 0\]
+That is, we denote by $s_k$ the smallest nonzero singular value.
+
+\begin{ex}
+	In example 1, we found the singular values of matrix A. Now construct the matrix $S$.
+	\begin{solution}
+		Since $s_1 = \sqrt{5} \geq s_2 = \sqrt{2} \geq s_3 = 1$. Thus
+		\[ S = \begin{bmatrix}
+		\sqrt{5}&0&0\\ 0&\sqrt{2}&0\\ 0&0&1\\ 0&0&0\\ 0&0&0
+		\end{bmatrix} \]
+	\end{solution}
+\end{ex} 
+
+\subsubsection*{Construction of V}
+Since $A^TA$ is a square matrix, if we decompose it by eigenvalues and eigenvectors, we will have
+\[ A^TA = VDV^T \]
+where $D$ is an $n\times n$ matrix and consist of the eigenvalues of $A^TA$, and $V$ is also $n\times n$ matrix and consist of the eigenvectors of $A^TA$. Moreover, since $A^TA$ is symmetric, so $V$ must be orthogonal. 
+
+\subsubsection*{Construction of U}
+Consider the singular values $s_1 \geq s_2 \geq \cdots \geq s_k > 0$ and their corresponding columns in $V$ given by $\mathbf{v}_1, \mathbf{v}_2,\cdots , \mathbf{v}_k$. We define
+\[ \mathbf{u}_i = \frac{1}{s_i} A \mathbf{v}_i,\;\;\forall i=1,2,\cdots, k. \]
+These are the first k vectors of the orthogonal matrix $U$, and $\mathbf{u}_i\in\mathbb{R}^m$. For the rest of the $m-k$ vectors, we first need to guess $m-k$ linear independent vectors, $\{\mathbf{x}_{k+1},\mathbf{x}_{k+2}, \cdots, \mathbf{x}_m \}$, then use Gram-Schmidt process to make them orthogonal. Then we have 
+\[ U = [\mathbf{u}_1, \mathbf{u}_2, \cdots, \mathbf{u}_k, \mathbf{u}_{k+1}, \cdots \mathbf{u}_m] \]
+U is an $m\times m$ matrix.
+
+\subsubsection*{Alternative Method for Constructing U}
+As we outlined above, $n\times n$ matrix $V$ consists of the eigenvectors of $A^TA$. Thus by analogy, the eigenvectors of matrix $AA^T$ are the columns of U. Therefore we can find the eigenvalues of $AA^T$ first, then order them from largest to smallest, then we can find their corresponding eigenvectors.
+
+Recall that $A^TA$ and $AA^T$ have the same nonzero eigenvalues from theorem 3, it can simplify the calculations.
+  
+\subsubsection*{Verifying the factorization $A=USV^T$}
+We need to show that $AV = US$.
+
+\begin{ex}
+	Do singular value decomposition to matrix
+	\[ A = \begin{bmatrix}
+	1&0&1\\ 0&1&0\\ 0&1&1\\ 0&1&0\\ 1&1&0
+	\end{bmatrix} \]
+	
+	\begin{solution}
+		In example 1 and 2, we have found that 
+		\[ S = \begin{bmatrix}
+		\sqrt{5}&0&0\\ 0&\sqrt{2}&0\\ 0&0&1\\ 0&0&0\\ 0&0&0
+		\end{bmatrix}  \]
+		
+		now we only have to find the $U$ and $V$.
+		
+		Since the eigenvalues of $A^TA$ are $5$, $2$ and $1$ respectively. Thus their corresponding eigenvectors are
+		\[ \mathbf{v}_1 = \begin{bmatrix}1\\2\\1\end{bmatrix},\;\;
+		  \mathbf{v}_2 = \begin{bmatrix}1\\-1\\1\end{bmatrix},\;\;
+		  \mathbf{v}_3 = \begin{bmatrix}-1\\0\\1\end{bmatrix},\]
+		 respectively. Hence, by normalizing these vectors, we have
+		 \[ V = \begin{bmatrix}
+		 \frac{\sqrt{6}}{6} & \frac{\sqrt{3}}{3} & -\frac{\sqrt{2}}{2}\\ \frac{\sqrt{6}}{3} & -\frac{\sqrt{3}}{3} & 0\\
+		 \frac{\sqrt{6}}{6} & \frac{\sqrt{3}}{3} & \frac{\sqrt{2}}{2}
+		 \end{bmatrix},\;\;\text{and}\;\;
+		 V^T = \begin{bmatrix}
+		 \frac{\sqrt{6}}{6} & \frac{\sqrt{6}}{3} & \frac{\sqrt{6}}{6}\\
+		 \frac{\sqrt{3}}{3} & -\frac{\sqrt{3}}{3} & \frac{\sqrt{3}}{3}\\
+		 -\frac{\sqrt{2}}{2} & 0 & \frac{\sqrt{2}}{2}
+		 \end{bmatrix} \]
+		 
+		 Finally, we are going to construct $U$. That means we are going to find the eigenvalues and eigenvectors of $AA^T$. By theorem 3, we know that $AA^T$ have the same nonzero eigenvalues as $A^TA$, so we see that $AA^T$ should have eigenvalues $\lambda_1 = 5$, $\lambda_2 = 2$, $\lambda_3 = 1$ too. The rest of them are also easy to find, they are just $0$. So $AA^T$ have 5 eigenvalues, $\lambda_1 = 5$, $\lambda_2 = 2$, $\lambda_3 = 1$ and $\lambda_4 = \lambda_5 = 0$. Therefore, their corresponding eigenvectors are
+		 \[ \mathbf{x}_1 = \begin{bmatrix} 2\\ 2\\ 3\\ 2\\ 3 \end{bmatrix},\;\;
+		 \mathbf{x}_2 = \begin{bmatrix} 2\\ -1\\ 0\\ -1\\ 0 \end{bmatrix},\;\;
+		 \mathbf{x}_3 = \begin{bmatrix} 0\\ 0\\ 1\\ 0\\ -1 \end{bmatrix},\;\;
+		 \mathbf{x}_4 = \begin{bmatrix} 1\\ 2\\ -1\\ 0\\ -1 \end{bmatrix},\;\;
+		 \mathbf{x}_5 = \begin{bmatrix} 0\\ 1\\ 0\\ -1\\ 0 \end{bmatrix} \]
+		 Recall that the eigenvectors corresponding to distinct eigenvalues are orthogonal, so the $\mathbf{x}_1$, $\mathbf{x}_2$, $\mathbf{x}_3$ and $\mathbf{x}_4$ form a orthogonal vector set but $\mathbf{x}_5$ is not orthogonal to $\mathbf{x}_4$. We need to apply Gram-Schmidt process to it.
+		 \[ \mathbf{v}_5 = \mathbf{x}_5 - \frac{\mathbf{x}_4\cdot\mathbf{x}_5}{\|\mathbf{x}_4\|}\mathbf{x}_4
+		 = -\frac{1}{7}\begin{bmatrix} 2\\ -3\\ -2\\ 7\\ -2 \end{bmatrix} \]
+		 
+		 Now normalize the set $\{\mathbf{x}_1, \mathbf{x}_2, \mathbf{x}_3, \mathbf{x}_4, \mathbf{v}_5 \}$, we obtain the columns of $U$.
+		 \[ U 
+		 = [\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3, \mathbf{u}_4, \mathbf{u}_5] 
+		 = \begin{bmatrix}
+		 \frac{\sqrt{30}}{15} & \frac{\sqrt{6}}{3} & 0 & \frac{\sqrt{7}}{7} & \frac{\sqrt{70}}{35}\\
+		 \frac{\sqrt{30}}{15} & -\frac{\sqrt{6}}{6} & 0 & \frac{2\sqrt{7}}{7} & -\frac{3\sqrt{70}}{70}\\
+		 \frac{\sqrt{30}}{10} & 0 & \frac{\sqrt{2}}{2} & -\frac{\sqrt{7}}{7} & -\frac{\sqrt{70}}{35}\\
+		 \frac{\sqrt{30}}{15} & -\frac{\sqrt{6}}{6} & 0 & 0 & \frac{\sqrt{70}}{10}\\
+		 \frac{\sqrt{30}}{10} & 0 & -\frac{\sqrt{2}}{2} & -\frac{\sqrt{7}}{7} & -\frac{\sqrt{70}}{35} \end{bmatrix} \]
+		 
+	\end{solution}
+\end{ex}
+
+\begin{summary}
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		& QR & SVD \\ 
+		\hline 
+		Efficiency & $O(2MN^2)$ & $O(4MN^2)$ \\ 
+		\hline 
+		Accuracy & sensitive to condition number & same\\
+		\hline
+		Robustness & depends on A & same \\
+		\hline
+	\end{tabular} 
+\end{summary}
+
+
+\section{Power Method}
+The \textbf{Power method} is an iterative technique used to determine the dominant eigenvalue of a matrix—that is, the eigenvalue with the largest magnitude.
+
+To apply the Power method, we assume that the $n \times n$ matrix A has n eigenvalues
+$\lambda_1, \lambda_2, \lambda_3|, \cdots,\lambda_n$ with an associated collection of linearly independent eigenvectors $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3, \cdots, \mathbf{v}_n\}$. Moreover, we assume that A has precisely one eigenvalue, $\lambda_1$, that is largest in magnitude, so that
+
+\[ |\lambda_1| > |\lambda_2| \geq |\lambda_3| \geq \cdots \geq |\lambda_n| \geq 0 \]
+
+If $\mathbf{x}$ is any vector in $\mathbb{R}^n$, and
+\[ \mathbf{x} = \sum \beta_j\mathbf{v}_j \]
+
+then 
+\[ A^k\mathbf{x} = \sum \lambda_j^k\beta_j\mathbf{v}_j \]
+If we factored out $\lambda_1^k$, we will have
+\[ A^k\mathbf{x} = \lambda_1^k \sum \left(\frac{\lambda_j}{\lambda_1}\right)^k\beta_j\mathbf{v}_j \]
+Since $\lambda_1$ is the eigenvalue with the largest magnitude, 
+\[ \lim_{k\to\infty} A^k\mathbf{x} = \lambda_1^k\beta_1\mathbf{v}_1 \]
+
+To make this conclusion useful, we first have to define infinity norm.
+\begin{definition}
+	Suppose $\mathbf{v}$ is a $n\times 1$ column vector, then the infinity norm is defined by
+	\[ \|\vec{v}\| = \max\{ |v_j|, j=1,2,3\cdots n \} \]
+\end{definition}
+\begin{ex}
+	Suppose $\mathbf{v} = [1,-2]^T$, then $\|\mathbf{v}\| = \max\{ |1|, |-2| \} = 2$
+\end{ex}
+
+Finally, by normalizing the $\mathbf{v}_1$ using the infinity norm, we can make use of this limit and approximate the dominated eigenvalue and its corresponding eigenvector.
+
+\begin{ex}
+	Approximate the dominated eigenvalue and its corresponding eigenvector of the matrix 
+	\[ A = \begin{bmatrix} -2&-3\\ 6&7 \end{bmatrix} \]
+	
+	First we guess an initial vector, say $\mathbf{x}_0 = [1,1]^T$. Then 
+	\[ \mathbf{x}_1 = A\mathbf{x}_0 = \begin{bmatrix} -5\\13 \end{bmatrix},\;\;
+	\mathbf{x}_2 = A\mathbf{x}_1 = \begin{bmatrix} -29\\61 \end{bmatrix},\;\;
+	\mathbf{x}_3 = A\mathbf{x}_2 = \begin{bmatrix} -125\\253 \end{bmatrix},\;\; \]
+	
+	\[ \mathbf{x}_4 = A\mathbf{x}_3 = \begin{bmatrix} -509\\1021\end{bmatrix},\;\;
+	\mathbf{x}_5 = A\mathbf{x}_4 = \begin{bmatrix} -2045\\4093 \end{bmatrix},\;\;
+	\mathbf{x}_6 = A\mathbf{x}_5 = \begin{bmatrix} -8189\\16381\end{bmatrix} \]
+	
+	As a consequence, approximations to the dominant eigenvalue $\lambda_1$ are
+	\begin{align*}
+	\lambda_1^{(1)} &= \frac{\lambda_1^2\beta_1\|\mathbf{v}_1\|_{\infty}}{\lambda_1\beta_1\|\mathbf{v}_1\|_{\infty}}
+	= \frac{\|A^2\mathbf{v}_1\|_{\infty}}{\|A\mathbf{v}_1\|_{\infty}} 
+	= \frac{61}{13} 
+	= 4.6923\\
+	\lambda_1^{(2)} &= \frac{\lambda_1^3\beta_1\|\mathbf{v}_1\|_{\infty}}{\lambda_1^2\beta_1\|\mathbf{v}_1\|_{\infty}}
+	= \frac{\|A^3\mathbf{v}_1\|_{\infty}}{\|A^2\mathbf{v}_1\|_{\infty}} 
+	= \frac{253}{61}
+	= 4.14754 \\
+	\lambda_1^{(3)} &= \frac{1021}{253} = 4.03557\\
+	\lambda_1^{(4)} &= \frac{4093}{1021} = 4.00881\\
+	\lambda_1^{(5)} &= \frac{16381}{4093} = 4.00200\\
+	\end{align*}
+	
+	So an approximation to the eigenvector corresponding to $\lambda_1 = 4.00200$ is $\mathbf{x}_6$. If we normalize $\mathbf{x}_6$ by dividing $-8189$, we will have
+	\[ \frac{\mathbf{x}_6}{-8189} = \begin{bmatrix} 1\\ -2.00037 \end{bmatrix} \]
+	
+	For comparison, the true eigenvalues and eigenvectors of $A$ are
+	\[ \lambda_1 = 4,\;\; \lambda_2 = 1 \]
+	\[ \mathbf{v}_1 = \begin{bmatrix} 1\\-2 \end{bmatrix},\;\;
+	\mathbf{v}_2 = \begin{bmatrix} 1\\-1 \end{bmatrix} \]
+\end{ex}
+\begin{warning}
+	\begin{enumerate}
+		\item
+		As we can see, this power method relies on the assumption that $\beta_1 \neq 0$. So when we choose our initial vector $\mathbf{x}_0$, we better be careful, it CANNOT be orthogonal to $\mathbf{v}_1$! 
+		\item 
+		The Power method has the disadvantage that it is unknown at the outset whether the matrix has a single dominant eigenvalue. Nor is it known how x(0) should be chosen so as to ensure that its representation in terms of the eigenvectors of the matrix will contain a nonzero contribution from the eigenvector associated with the dominant eigenvalue, should it exist.
+	\end{enumerate}
+	
+\end{warning}

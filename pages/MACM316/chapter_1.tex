@@ -1,0 +1,140 @@
+	\newtheorem*{upperbound}{Theorem}
+	\chapter{Floating Point System}
+	\section{Floating Point Representation}
+	A floting point number $x$ is represented as:
+	\[x = \pm 0.d_1d_2...d_k\times\beta^n\]
+	where $1\leq d_1\leq \beta-1$, $0\leq d_j\leq \beta-1\;(j=2,3,\cdots,k)$, and these digits integers. Moreover, $k$ is the precision of the floating point number, $\beta$ is the base and $n_{min} \leq n\leq n_{max}$(the range of n depends on the computer).
+	In addition, $d_1...d_k$ is called mantissa.
+	
+	Nowadays, $k$ is usually 16, and it's called doubled-precision floating point system. It's worth to mention that single precision means $k=8$ 
+	
+	\section{Floating Point Arithematics}
+	The four basic operations of floating point numbers are define as below:
+	\begin{align*}
+		x\oplus y &= fl(fl(x)+fl(y))\\
+		x\ominus y &= fl(fl(x)-fl(y))\\
+		x\otimes y &= fl(fl(x)\times fl(y))\\
+		x\oslash y &= fl(fl(x)/fl(y))
+	\end{align*}
+
+	where the $fl(x)$ is the rounding-off of the actual real number $x$.
+	
+	\section{Error}
+	There are ways to measure errors. Suppose we have the original number $x$ and the number $\hat{x}$ which is the approximation of $x$. We can define Absolute Error:
+	\[|x - \hat{x}|\]
+	and we can also define relative error:
+	\[\frac{|x-\hat{x}|}{|x|}\] 
+	
+	\subsection{Rounding}
+	We get error from rounding a number. Since computer can only store finite digits, so we have to round-off the number to certain precision in order to save it in computer.
+	Suppose 
+	\[x = d_0.d_1d_2...d_{k-1}d_k... \times \beta^n \]
+	There are two types of rounding methods. One is round-to-nearest: we denote $fl(x)$ as the k-digit round-to-nearest of real number $x$:
+	\begin{displaymath}
+	fl(x) = 
+	\begin{cases}
+	d_0.d_1d_2...d_{k-1} & \text{ if } 0 \leq d_{k}<\frac{\beta}{2} \\ 
+	d_0.d_1d_2...(d_{k-1}+1) & \text{ if } \frac{\beta}{2} \leq d_{k} < \beta
+	\end{cases}
+	\end{displaymath}
+	
+	The other rounding method is round-by-chopping: we denote that $chop(x)$ as the k-digit round-by-chopping of real number $x$:
+	\[ chop(x) = d_0.d_1...d_{k-1} \]
+	Chopping ignores the digits after $d_{k-1}$.
+	
+	In fact, we have a theorem stating the upper bound of relative round-off error of a number.
+	\begin{upperbound}
+		Let $x\in\mathbb{R}$, and let $fl(x)$ be a k-digit round-off floating number. Then $\exists$ upper bound for the relative round-to-nearest error.
+		\[\left|\frac{x-fl(x)}{x}\right|\leq \frac{1}{2}\beta^{1-k} \] 
+	\end{upperbound}
+	
+	\begin{proof}
+		Let $x\equiv d_0.d_1...d_{k-1}d_{k}...\times \beta^n$\\
+		\\
+		If $d_{k+1}<\frac{\beta}{2}$, then $fl(x)= d_0.d_1...d_{k-1}\times\beta^n$. And
+		\[ |x-fl(x)| 
+		= \underbrace{0.0...0}_{k} d_{k}...\times\beta^n\\
+		=d_{k}.d_{k+1}..\times\beta^{n-k} \]
+		Therefore the relative error is
+		\[ \frac{|x-fl(x)|}{|x|} 
+		= \frac{d_{k}.d_{k+1}...}{d_0.d_1...d_{k-1}d_{k}...}\times\beta^{k}
+		\]
+		
+		Notice that the fraction is bounded above: when the denominator is the smallest(1.000...) and the numerator is the largest($\frac{\beta}{2}$), the fraction achieve its maximum. Thus the maximum relative error 
+		\[ \max \frac{|x-fl(x)|}{|x|} = \frac{\frac{\beta}{2}}{1}\beta^{-k} 
+		= \frac{1}{2}\beta^{1-k} \]
+		\\
+		If $d_{k+1}\geq\frac{\beta}{2}$, then $fl(x)= d_0.d_1...(d_{k-1}+1)\times\beta^n$. So
+		\begin{align*}
+		|x-fl(x)| &= \left\{ \begin{matrix}
+		\underbrace{0.0...0}_{k}(\beta-d_k) &,\text{If } d_{k+1}=0\\
+		\underbrace{0.0...0}_{k}(\beta-1-d_k) &,\text{If } d_{k+1}>0
+		\end{matrix} \right. \\
+		&= \left\{ \begin{matrix}
+		(\beta-d_k).\cdots \times\beta^{-k} &,\text{If } d_{k+1}=0\\
+		(\beta-1-d_k).\cdots\times\beta^{-k} &,\text{If } d_{k+1}>0
+		\end{matrix} \right. 
+		\end{align*}
+		
+		In either case, $|x-fl(x)|\leq \frac{\beta}{2}\times\beta^{-k}$. Therefore
+		\[ \max\frac{|x-fl(x)|}{|x|} = \frac{1}{2}\beta^{1-k} \]
+	\end{proof}
+
+	\begin{upperbound}
+		Let $x\in\mathbb{R}$, and let $fl(x)$ be a k-digit round-off floating number. Then $\exists$ upper bound for the relative round-to-nearest error.
+		\[\left|\frac{x-fl(x)}{x}\right|\leq \beta^{1-k} \] 
+	\end{upperbound}
+\begin{proof}
+	Try it yourself, proof is similar but much simpler.
+\end{proof}
+	
+	\subsection{Machine Epsilon}
+	We denote $\epsilon\equiv\beta^{1-k}$ and called $\epsilon$ the machine epsilon. Under IEEE double precision framework, $\beta=2$ and $k=53$, we have that $\epsilon=2^{-52} \approx 2.2*10^{-16}$.
+	
+	\begin{property}
+		\begin{enumerate}
+			\item [(a)]
+			\[\left|\frac{x\cdot y - x\odot y}{x\cdot y} \right| \leq \epsilon\]
+			where the $\cdot$ denotes four basic operations: $+,\;-,\;\times,\;\div$.
+			
+			\item [(b)]
+			$\epsilon$ is the least positive number such that
+			\[ 1+\epsilon \neq 1 \]
+		\end{enumerate}
+	\end{property}
+	
+	However, in general, the relative error of other calculations under IEEE double precision framework will be at least $10^{-16}$.
+
+	
+	\subsection{Canellation}
+	When we subtract two very close numbers, we got error due to the lost of digits.
+	Suppose we have two floating point number x and y store in computer:
+	\[fl(x) = 0.d_1d_2...d_pa_{p+1}...a_k\times\beta^n\] 
+	\[fl(y) = 0.d_1d_2...d_pb_{p+1}...b_k\times\beta^n\]
+	then $x\ominus y = fl(fl(x)-fl(y)) = 0.c_{p+1}...c_k\times\beta^{n-p}$
+	From the calculation, we see that it loses p digits.
+	
+	E.x.  calculate the limit of $f(x)= \frac{1-\cos x}{x^2} $  in matlab by setting x=1e-8,
+	then $1-\cos x = 0 $ due to cancellation error, thus matlab gives $f(1e-8) = 0$. However, 
+	$\lim_{x\rightarrow 0 } f(x) = 1/2 $.   
+	
+	Caution: Just avoid subtracting two close numbers.
+	
+	\subsection{Amplification of round-off error}
+	When dividing a large denominator, the error between fl(x) and x will be amplified.
+	
+	E.x. suppose $fl(x) = x +\delta$ where $\delta$ is the rounding error between $x$ and $fl(x)$, and let $z=10^{-n}$. Then
+	\[x\oslash z = fl(fl(x)/fl(z)) = x/z + \delta\cdot 10^n \]
+	We can see that the round-off error $\delta$ is amplified by a factor of $10^n$.
+	
+	Caution: Just avoid deviding large numbers.
+	
+	\subsection{Accumulation of round-off error} 
+	When number of floating point operations increase, the error will grow as calculation continue.
+	
+	E.x. Suppose we want to calculate a polynomial $P(x) = \sum a_ix^i$. The error will be accumulated throgh out the calculation. To reduce the number of floating point operations, we can rewrite $P(x)$ in the nested form:
+	\[a_0+x(a_1+x(a_2+x(a_3+x(\cdots))))\] 
+	we can have a more accurate answer.
+	
+	Caution: This is just an extreme example, usually this will not happend. After million, billions of floating point operations, the error ususally will stay under machine epislon.
+

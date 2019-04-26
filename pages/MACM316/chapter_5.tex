@@ -1,0 +1,288 @@
+\chapter{Approximation Theory}
+\section{Discrete Least Square Approximation}
+Least Square is used to find the best-fit function that goes through most the given data points. 
+
+\begin{thm}
+	Suppose given $n+1$ data points $(x_0, y_0), (x_1, y_1), \cdots,(x_n, y_n)$, and we are going to fit these nodes with a polynomial of degree $k$:
+	\[ P(x) = c_0 + c_1x^1 + \cdots + c_kx^k. \] 
+	Then we have the following so-called normal equation:
+	\[ \mathbf{A}^T \mathbf{A c} = \mathbf{A}^T\mathbf{y} \]
+	
+	Where 
+	\[ \mathbf{A} = \begin{bmatrix}
+	1 & x_0 & x_0^2 & \cdots & x_0^k\\
+	1 & x_1 & x_1^2 & \cdots & x_1^k\\
+	\vdots & \vdots & \vdots & \ddots & \vdots\\
+	1 & x_n & x_n^2 & \cdots & x_n^k\\
+	\end{bmatrix},\;\;
+	\mathbf{c} = \begin{bmatrix}
+	c_0\\ c_1\\ \vdots\\ c_k 
+	\end{bmatrix},\;and\;
+	\mathbf{y} = \begin{bmatrix}
+	y_0\\ y_1\\ \vdots\\ y_k 
+	\end{bmatrix} \]
+	
+	Once the coefficients of the polynomial is solved, the best-fit polynomial is then determined.
+\end{thm}
+
+\begin{warning}
+	There are many ways to solve the normal equation: GE, GE with pivoting, LU decomposition, QR decomposition. Choose the one that is suitable for the particular situation. And it is worth to mention that QR is usually robust and efficient. Since if $A = QR$, then the coefficients $\vec{c}$
+	\[ \mathbf{c} = \mathbf{R}^{-1} \mathbf{Q}^T \mathbf{y} \] 
+\end{warning}
+
+\begin{ex}
+	Find the best-fit line for the following data set.
+	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline 
+		x & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ 
+		\hline 
+		y & 1.3 & 3.5 & 4.2 & 5.0 & 7.0 & 8.8 & 10.1 & 12.5 & 13.0 & 15.6 \\ 
+		\hline 
+	\end{tabular} 
+\end{ex}
+\begin{solution}
+	We are going to use linear function $ P(x) = c_0 + c_1x$ to fit the given data set. Thus we have
+	\[ \mathbf{A} 
+	= \begin{bmatrix}
+	1 & x_0\\ 1 & x_1\\ 1 & x_2\\ 1& x_3\\ 1 & x_4\\ 1 & x_5\\ 1 & x_6\\ 1 & x_7\\ 1 & x_8\\ 1 & x_9\\
+	\end{bmatrix}
+	= \begin{bmatrix}
+	1& 1\\ 1& 2\\ 1& 3\\ 1& 4\\ 1& 5\\ 1& 6\\ 1& 7\\ 1& 8\\ 1& 9\\ 1& 10
+	\end{bmatrix},\;\;
+	\mathbf{y} = \begin{bmatrix}
+	1.3 \\ 3.5 \\ 4.2 \\ 5.0 \\ 7.0 \\ 8.8 \\ 10.1 \\ 12.5 \\ 13.0 \\ 15.6
+	\end{bmatrix} \]
+	
+	Therefore the normal equation 
+	\begin{align*}
+	\mathbf{A}^T \mathbf{Ac} &= \mathbf{A}^T \mathbf{y}\\
+	\begin{bmatrix}
+	10 & 55\\ 55 & 385
+	\end{bmatrix}
+	\begin{bmatrix}
+	c_0\\ c_1
+	\end{bmatrix}
+	&= \begin{bmatrix}
+	81\\ 572.4
+	\end{bmatrix}
+	\end{align*}
+	
+	By solving this linear system, we have $\mathbf{c} = [-0.36, 1.53818182]^T$. Thus the best-fit line is given by
+	\[ P(x) = -0.36 + 1.53818182x \].
+	
+	If we are to solve the coefficient using QR factorization, we can skip the computation for $A^TA$ and $A^Ty$ (instead we factorize A to Q and R), because we know the analytic solution to that is
+	\[ \mathbf{c} = \mathbf{R}^{-1} \mathbf{Q}^T \mathbf{y} \]  
+\end{solution}
+
+
+\section{Continuous Functions as Abstract Vector Space}
+\begin{thm}
+	Let $C[a,b]$ denotes the space of all continuous real-valued functions on interval $[a,b]\in\mathbb{R}$. Then $C[a,b]$ is a vector space, each continuous function $f\in C[a,b]$ represents a vector.
+\end{thm}
+\begin{proof}
+	To prove this, we need to check if the elements in $C[a,b]$ satisfy the axioms of abstract vector space.
+	\begin{enumerate}
+		\item [1.]
+		Associativity of addition:\\
+		Let $f,g,h\in C[a,b]$, then it is clear that $(f+g)+h = f+(g+h)$.
+		
+		\item [2.]
+		Commutativity of addition:\\
+		Let $f,g\in C[a,b]$, then it is clear that $f+g = g+f$.
+		
+		\item [3.]
+		Identity element of addition:\\
+		The identity element is $f(x) = 0$ clearly.
+		
+		\item [4.]
+		Inverse elements of addition:\\
+		Clearly the inverse element of each $f\in C[a,b]$ is $-f$, and $-f\in C[a,b]$.
+		
+		\item [5.]
+		Compatibility of scalar multiplication with field multiplication:\\
+		Let $a,b\in\mathbb{R}$ and $f\in C[a,b]$, then $a(bf) = (ab)f$.
+		
+		\item [6.]
+		Identity element of scalar multiplication:\\
+		The identity element is clearly $f(x) = 1$.
+		
+		\item [7.]
+		Distributivity of scalar multiplication with respect to vector addition:\\
+		Let $a\in\mathbb{R}$ and $f,g\in C[a,b]$, then $a(f+g) = af + ag$.
+		
+		\item [8.]
+		Distributivity of scalar multiplication with respect to field addition:\\
+		Let $a,b\in\mathbb{R}$ and $f\in C[a,b]$, then $(a+b)f = af + bf$.
+		\end{enumerate}
+\end{proof}
+
+\begin{definition} [\textbf{Linear Independent Functions}]
+	The set of functions $\{ \phi_0, \phi_1,\cdots, \phi_n \}$ is said to be linear independent on $[a,b]$ if, whenever
+	\[ c_0\phi_0 + c_1\phi_1 + \cdots + c_n\phi_n = 0,\;\; \forall x\in[a,b] \]
+	we have $c_0 = c_1 = \cdots = 0$. Otherwise, the set of functions is said to be \textbf{linear dependent}. 
+\end{definition}
+
+\begin{ex}
+	Let $\phi_j$ be polynomial of degree $j$, then $\{ \phi_0, \phi_1,\cdots, \phi_n \}$ is linearly independent on any interval $[a,b]$.
+\end{ex}
+
+\begin{definition}
+	Let $f,g\in C[a,b]$, then their \textbf{inner product}, $\langle f, g \rangle$, can be defined by
+	\[ \langle f, g \rangle = \int_a^b f(x)g(x)dx \].
+	
+	If weight function $w(x)$ is introduced, then we can define the \textbf{weighted inner product} as 
+	\[ \langle f, g \rangle_w = \int_a^b w(x)f(x)g(x)dx \]
+\end{definition}
+
+\begin{definition}
+	Let $\| f\|$ denotes the \textbf{norm} of a function $f\in C[a,b]$, it is defined as 
+	\[ \|f\| =  \sqrt{\langle f, f \rangle} = \left(\int_a^b f^2(x)dx\right)^{1/2} \]
+	If weight function, $w$, is introduced, then the \textbf{weighted norm} of a function $f$ can be defined as
+	\[ \|f\|_w =  \sqrt{\langle f, f \rangle_w} = \left(\int_a^b w(x)f^2(x)dx\right)^{1/2} \]
+\end{definition}
+\begin{property}
+	Here are three essential properties of the norm of a function.
+	\begin{enumerate}
+		\item Nonnegativity: $\|f\| \geq 0$. The equality holds only when $f=0$.
+		\item Commutativity: $\|f-g\| = \|g-f\|$.
+		\item Triangle inequality: $\|f-g\| \leq \|f-h\| + \|h-g\|$.
+	\end{enumerate}
+\end{property}
+
+\begin{definition}
+	$\{\phi_0, \phi_1, \phi_2,\cdots, \phi_n\}$ is said to be a set of \textbf{orthogonal set of functions} for the interval $[a,b]$ with respect to the weight function $w$ if 
+	\[ \langle \phi_i, \phi_j \rangle_w = \int_a^b w(x)\phi_i(x)\phi_j(x)dx = \|\phi_i\|_w^2\delta_{ij} \]
+	where
+	\[ \delta_{ij} = \begin{cases}
+	0& \text{if $i\neq j$}\\
+	1& \text{if $i=j$}
+	\end{cases}\]
+	is the so-called Kronecker delta. If $\|\phi_i\|=1, \forall i=1,2,\cdots,n$, we say $\{\phi_0, \phi_1, \phi_2,\cdots, \phi_n\}$ is a set of \textbf{orthonormal set of functions} for the interval $[a,b]$.
+\end{definition}
+
+\begin{thm}
+	\textbf{Gram-Schmidt process} is described as follows:
+	
+	Suppose we have a set of linear vectors $\{f_0, f_1, f_2,\cdots, f_n\}$, to construct a set of orthogonal basis $\{\phi_0, \phi_1, \phi_2,\cdots, \phi_n\}$
+	
+	\begin{enumerate}
+		\item 
+		Start with $f_0$. Let $\phi_0 = f_0$
+		\item 
+		$\phi_1 = f_1 - \frac{\langle f_1,f_0 \rangle}{\| f_0 \|^2}f_0$.
+		\item 
+		$\phi_2 = f_2 - \frac{\langle f_2,f_0 \rangle}{\| f_0 \|^2}f_0 
+		- \frac{\langle f_2,f_1 \rangle}{\| f_1 \|^2}f_1$.
+		\item 
+		$\cdots$
+		\item 
+		$\phi_k = f_k - \sum_{j=0}^{k-1}\frac{\langle f_k,f_j \rangle}{\| f_j \|^2}f_j$.
+	\end{enumerate}
+	
+	If we wish them to be normalized, we just need to divide the norm for each of them, $\phi_k/\|\phi_k\|$.
+\end{thm}
+
+\begin{thm}
+	Suppose $\{\phi_0, \phi_1, \phi_2,\cdots \}$ is a complete basis so that all continuous function $f(x)$ can be expressed using the basis
+	\[ f(x)  = \sum_{k=0}^{\infty} c_k\phi_k \]
+	Then 
+	\[P(x) = \sum_{k=0}^{n} c_k\phi_k\]
+	is an approximation of $f(x)$ where 
+	\[ c_k = \frac{\langle f(x), \phi_k \rangle_w}{\|\phi_k \|^2} 
+	= \frac{\int_a^b w(x)f(x)\phi_k(x)dx}{\int_a^b w(x) \phi_k^2(x)dx} \].
+	
+\end{thm}
+
+\section{Continuous Least Square Approximation}
+In this section we introduce some different bases.
+
+\subsection{Legendre Polynomial}
+The set of Legendre polynomials, $\{P_n\}$, is orthogonal on $[-1,1]$ with respect to weight function $w(x)=1$. They are constructed using Gram-Schmidt process with $P_0(x) = 1$ and requires that $\forall n,\;P_n(1) = 1$.
+
+\begin{warning}
+	There are different construction methods for the Legendre polynomial, and they will have \textbf{DIFFERENT} factors in front! Make sure you know which method your professor is using!
+\end{warning}
+\begin{summary}
+	Here are the first few terms of the Legendre polynomials using different construction methods. Although the factors are not important (just like the length of basis vectors are not important as long as they are orthogonal), it is necessary to know which construction method your professor is using 
+	\begin{enumerate}
+		\item 
+		Using the method described in textbook (522, Richard L.Burden 10th edition):
+		\begin{align*}
+		P_0(x) &= 1\\
+		P_1(x) &= x\\
+		P_2(x) &= \frac{1}{3}(3x^2-1) \\
+		P_3(x) &= \frac{3}{5}(5x^3 - 3x) \\
+		P_4(x) &= \frac{1}{35}(35x^4 -30x^2 + 35)\\
+		P_5(x) &= \frac{1}{63}(63x^5 - 70x^3 + 15x)
+		\end{align*}
+		
+		\item 
+		Construct by using Rodrigues' formula:
+		\begin{align*}
+		P_0(x) &= 1\\
+		P_1(x) &= x\\
+		P_2(x) &= \frac{1}{2}(3x^2-1) \\
+		P_3(x) &= \frac{1}{2}(5x^3 - 3x) \\
+		P_4(x) &= \frac{1}{8}(35x^4 -30x^2 + 35)\\
+		P_5(x) &= \frac{1}{8}(63x^5 - 70x^3 + 15x)
+		\end{align*}
+		
+		\item 
+		Using Gram-Schmidt process(with normalization):
+		\begin{align*}
+		P_0(x) &= \sqrt{\frac{1}{2}}\cdot 1\\
+		P_1(x) &= \sqrt{\frac{3}{2}}x\\
+		P_2(x) &= \sqrt{\frac{5}{8}}(3x^2-1) \\
+		P_3(x) &= \frac{\sqrt{7/2}}{2}(5x^3 - 3x) \\
+		P_4(x) &= \frac{\sqrt{9/2}}{8}(35x^4 -30x^2 + 35)\\
+		P_5(x) &= \frac{\sqrt{11/2}}{8}(63x^5 - 70x^3 + 15x)
+		\end{align*}
+	\end{enumerate}
+\end{summary}
+
+\subsection{Chebyshev Polynomial}
+The set of Chebyshev polynomials, $\{ T_n \}$, is orthogonal on $[-1,1]$ with respect to weight function $w(x) = (1-x^2)^{-1/2}$. They can be derived using Gram-Schmidt process, but we have a more convenient definition to derive them.
+
+\begin{definition}
+	For $x\in[-1,1]$, the nth \textbf{Chebyshev polynomial of the first kind} is defined as
+	\[ T_n(x) = \cos(n\arccos x),\;\;n\geq 0 \]
+	On the other hand, nth \textbf{Chebyshev polynomial of the second kind} is defined as
+	\[ U_n(x) = \frac{\sin((n+1)\arccos x)}{\sin(\arccos x)} \]
+\end{definition}
+
+\begin{thm}
+	There is a recursion formula for Chebyshev polynomial:
+	\begin{align*}
+	T_{n+1}(x) &= 2xT_n(x) - T_{n-1}(x)\\
+	U_{n+1}(x) &= 2xU_n(x) - U_{n-1}(x)
+	\end{align*}
+\end{thm}
+
+Here are the first few polynomials of the first kind:
+\begin{align*}
+T_0(x) &= 1\\
+T_1(x) &= x\\
+T_2(x) &= 2x^2 -1\\
+T_3(x) &= 4x^3 -3x\\
+T_4(x) &= 8x^4 -8x^2 + 1
+\end{align*}
+
+And here are the first few polynomials of the second kind:
+\begin{align*}
+U_0(x) &= 1\\
+U_1(x) &= 2x\\
+U_2(x) &= 4x^2 - 1\\
+U_3(x) &= 8x^3 - 4x\\
+U_4(x) &= 16x^4 - 12x^2 + 1
+\end{align*}
+
+\begin{property}
+	The roots of the Chebyshev polynomials are widely used as special nodes in Interpolation.
+	
+	The roots from the Chebyshev polynomials of the first(second) kind are called the Chebyshev nodes of the first(second) kind, and they are
+	\[ x_k = \cos\left( \frac{2k-1}{2n}\pi \right),\;\; k=1,2,\cdots n \;\;(\text{roots of $T_n(x)$}) \]
+	and
+	\[ x_k = \cos\left( \frac{k}{n+1}\pi \right),\;\; k=1,2,\cdots n\;\; (\text{roots of $T_n(x)$}) \]
+\end{property}
