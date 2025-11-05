@@ -5,4 +5,11 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/huntfeng.github.io/",
   },
+  modules: ["@nuxt/ui", "@nuxt/content"],
+  css: ["~/assets/css/main.css"],
+  content: {
+    highlight: {
+      theme: "github-dark",
+    },
+  },
 });
