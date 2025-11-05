@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-primary: #7aa2f7;
+  --ui-bg: #0c0e14;
+  --ui-bg-muted: #16161e;
+  --ui-bg-elevated: #1a1b26;
+}
+
+.prose h1 {
+  @apply my-3 text-3xl;
+}
+.prose h2 {
+  @apply my-3 text-2xl;
+}
+.prose h3 {
+  @apply my-2 text-xl;
+}
+.prose h4 {
+  @apply my-1;
+}
+.prose p {
+  @apply my-0;
+}
