@@ -136,6 +136,12 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  htmlAttrs: {
+    class: "dark", // Force dark mode
+  },
+});
+
 const profile = {
   name: "Hunt Feng",
   bio: "I’m Hunt Feng, a GPU software engineer and computational physicist passionate about high-performance computing and plasma simulations. With over three years of experience in C++/CUDA/Python development, I’ve optimized large-scale MHD and PIC codes on GPU clusters and explored machine learning applications such as Physics-Informed Neural Networks. My work bridges scientific computing and modern software engineering—from accelerating plasma simulations at General Fusion to leading a 3-person team building open-source tools with 4K+ downloads. I aim to advance HPC software for physics-driven research and simulation.",

@@ -6,6 +6,9 @@ export default defineNuxtConfig({
     baseURL: "/",
   },
   modules: ["@nuxt/ui", "@nuxt/content"],
+  ui: {
+    colorMode: false,
+  },
   css: ["~/assets/css/main.css"],
   content: {
     highlight: {
