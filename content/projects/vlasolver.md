@@ -1,6 +1,8 @@
 ---
 title: Noise‑Free Grid-based Vlasov Modeling of Plasma-Object Interactions via a Unified Ghost‑Fluid Immersed‑Boundary Method
 date: 2025-05-20
+category: Research
+description: We present a unified immersed-boundary framework for grid-based Vlasov-Poisson simulations of plasma-object interactions, leveraging a ghost-fluid method to accurately impose complex boundary conditions on Cartesian grids. This approach enables noise-free, high-fidelity kinetic modeling in complex geometries, resolving critical near-wall phenomena.
 keywords:
   - Grid-based Vlasov solver
   - Ghost-Fluid method

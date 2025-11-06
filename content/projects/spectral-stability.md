@@ -1,6 +1,8 @@
 ---
 title: Spectral Stability of Plasma Flows In the Magnetic Nozzle
 date: 2024-08-30
+category: Research
+description: Spectral stability analysis of plasma flows in magnetic nozzle configurations using spectral methods, examining eigenvalue problems and addressing spectral pollution in subsonic, supersonic, and transonic velocity profiles.
 keywords:
   - Magnetic nozzle
   - Magnetic mirror configuration

@@ -1,6 +1,8 @@
 ---
 title: GPU-based Provably Positive Discontinuous Galerkin method for Multidimensional Ideal Magnetohydrodynamics
 date: 2021-06-01
+category: Research
+description: GPU-accelerated implementation of Provably Positive Discontinuous Galerkin method for ideal MHD simulations using Taichi Lang, ensuring positivity of density and pressure during plasma shock simulations.
 keywords:
   - Magnetohydrodynamics
   - Discontinuous Galerkin
