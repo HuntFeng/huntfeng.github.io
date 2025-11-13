@@ -10,5 +10,7 @@ export default defineNuxtConfig({
     colorMode: false,
   },
   css: ["~/assets/css/main.css"],
+  gtag: {
+    id: "G-KN2RYR6L1W",
+  },
 });
-
