@@ -5,14 +5,10 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/",
   },
-  modules: ["@nuxt/ui", "@nuxt/content"],
+  modules: ["@nuxt/ui", "@nuxt/content", "nuxt-gtag"],
   ui: {
     colorMode: false,
   },
   css: ["~/assets/css/main.css"],
-  content: {
-    highlight: {
-      theme: "github-dark",
-    },
-  },
 });
+
