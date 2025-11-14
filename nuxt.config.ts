@@ -6,6 +6,12 @@ export default defineNuxtConfig({
     baseURL: "/",
   },
   modules: ["@nuxt/ui", "@nuxt/content", "nuxt-gtag"],
+  icon: {
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 256,
+    },
+  },
   ui: {
     colorMode: false,
   },
