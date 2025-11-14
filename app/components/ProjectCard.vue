@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col hover:shadow-xl transition-all hover:scale-[1.02] cursor-pointer bg-muted border border-primary/30"
+    class="flex flex-col hover:shadow-xl transition-all hover:scale-[1.02] cursor-pointer bg-muted border border-primary/30 rounded-lg"
   >
     <div class="border-b border-primary/30 p-3">
       <div class="flex flex-col">
