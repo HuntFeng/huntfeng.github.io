@@ -119,12 +119,6 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  htmlAttrs: {
-    class: "dark",
-  },
-});
-
 const profile = {
   name: "Hunt Feng",
   title: "GPU Software Engineer & Computational Physicist",
@@ -147,6 +141,19 @@ const profile = {
     },
   ],
 };
+
+useHead({
+  title: "Home",
+  htmlAttrs: {
+    class: "dark",
+  },
+  meta: [
+    {
+      name: "bio",
+      content: profile.bio,
+    },
+  ],
+});
 
 const currentYear = new Date().getFullYear();
 
