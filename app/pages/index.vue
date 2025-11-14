@@ -96,7 +96,7 @@
             v-for="project in filteredProjects"
             :key="project.path"
             :project="project"
-            @click="() => $router.push(project.path)"
+            @click="navigateTo(project.path)"
           />
         </div>
 
