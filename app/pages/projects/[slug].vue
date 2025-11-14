@@ -3,7 +3,13 @@
     <!-- Back Button -->
     <section class="py-8 bg-default border-b border-gray-700">
       <UContainer>
-        <UButton to="/" variant="ghost" icon="i-heroicons-arrow-left" size="sm">
+        <UButton
+          to="/"
+          variant="ghost"
+          color="primary"
+          icon="i-heroicons-arrow-left"
+          size="sm"
+        >
           Back to Projects
         </UButton>
       </UContainer>
@@ -48,6 +54,7 @@
                 target="_blank"
                 icon="i-heroicons-document-text"
                 variant="outline"
+                color="primary"
               >
                 Read Paper
               </UButton>
