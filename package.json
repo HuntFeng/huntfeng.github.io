@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@iconify-json/heroicons": "^1.2.3",
     "@nuxt/content": "^3.8.0",
     "@nuxt/icon": "^2.1.0",
     "@nuxt/ui": "^4.1.0",

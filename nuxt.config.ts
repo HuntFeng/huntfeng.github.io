@@ -7,9 +7,8 @@ export default defineNuxtConfig({
   },
   modules: ["@nuxt/ui", "@nuxt/content", "nuxt-gtag"],
   icon: {
-    clientBundle: {
-      scan: true,
-      sizeLimitKb: 256,
+    serverBundle: {
+      collections: ["heroicons"],
     },
   },
   ui: {
