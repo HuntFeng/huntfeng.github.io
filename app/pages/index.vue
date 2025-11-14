@@ -143,7 +143,7 @@ const profile = {
 };
 
 useHead({
-  title: "Home",
+  title: "Hunt Feng",
   htmlAttrs: {
     class: "dark",
   },
