@@ -10,7 +10,6 @@ keywords:
   - Vlasov-Poisson system
   - GPU
   - Kokkos
-github: https://github.com/HuntFeng/vlasolver
 ---
 
 ## Abstract
