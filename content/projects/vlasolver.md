@@ -21,4 +21,7 @@ We present a unified, second-order immersed-boundary framework for the 2D2V Vlas
 
 This approach enables accurate, noise-free kinetic simulations in complex geometries, resolving high-energy tails and near-wall structures. Results on classical plasma-dielectric cases demonstrate robust handling of curved boundaries, opening a practical path for Vlasov modeling in real-world applications.
 
+## APSDPP2025 Poster
+![APSDPP2025 poster](/vlasolver/APSDPP2025_poster.png)
+
 ## (Work In Progress)
